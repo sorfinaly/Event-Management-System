@@ -1,7 +1,5 @@
 
-<h5> Title: Event Management System </h5>
-
-<br>
+<h2>Title: Event Management System</h2>
 <h3>Group Members:</h3><br>
 
 | NAME                           | MATRIC_NO |
