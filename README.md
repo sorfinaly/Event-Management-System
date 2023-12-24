@@ -15,15 +15,14 @@
 <h3>Objective</h3>
 
 <h3>Features & Functionality</h3>
-
-    <ul>
-        <li>Registration form to publish the event</li>
-        <li>Registration form to join the event</li>
-        <li>Registration form to recruit committee</li>
-        <li>Owner's event can see list of attendees</li>
-        <li>User's profile</li>
-        <li>search bar and filter keyword</li>
-    </ul>
+<ul>
+    <li>Registration form to publish the event</li>
+    <li>Registration form to join the event</li>
+    <li>Registration form to recruit committee</li>
+    <li>Owner's event can see list of attendees</li>
+    <li>User's profile</li>
+    <li>search bar and filter keyword</li>
+</ul>
 
 <h3>ERD Diagram</h3>
 
