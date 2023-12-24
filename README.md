@@ -1,8 +1,6 @@
 <h5>Title: Event Management System</h5>
 <br>
 <h3>Group Members:</h3>
-<br>
-
 | NAME                           | MATRIC_NO |
 |:------------------------------:|:---------:|
 | SORFINA ALYIA BINTI JAZRRY     | 2017326   |
@@ -20,7 +18,7 @@
     <li>Registration form to join the event</li>
     <li>Registration form to recruit committee</li>
     <li>Owner's event can see list of attendees</li>
-    <li>User's profile</li>
+    <li>User's profile - CRUD Operations</li>
     <li>search bar and filter keyword</li>
 </ul>
 
