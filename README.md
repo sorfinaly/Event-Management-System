@@ -1,6 +1,6 @@
-<h1>Title: Event Management System</h1>
+<h5>Title: Event Management System</h5>
 <br>
-<h2>Group Members:<h2>
+<h5>Group Members:<h5>
 <br>
 
 | NAME                           | MATRIC_NO |
@@ -9,3 +9,4 @@
 | SHAFIQAH BINTI GHAZALI         | 2111362   |
 | SIDDIQUI MARYAM                | 2115928   |
 | KHAIRINA MAISARAH BINTI HUSNY  | 2129358   |
+
