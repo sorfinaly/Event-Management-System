@@ -1,6 +1,6 @@
-<h3>Title: Event Management System</h3>
+<h4>Title: Event Management System</h4>
 <br>
-<h5>Group Members:</h5>
+<h3>Group Members:</h3>
 <br>
 
 | NAME                           | MATRIC_NO |
@@ -10,19 +10,21 @@
 | SIDDIQUI MARYAM                | 2115928   |
 | KHAIRINA MAISARAH BINTI HUSNY  | 2129358   |
 
-<h5>Introduction</h5>
-<p> </p>
-<h5>Objective</h5>
-<p> </p>
-<h5>Features & Functionality</h5>
-- fasldf
-- slafjskldf
-- sjdfk
-<ul>
-    <li>sfjksdlafj</li>
-    <li>sdfasdfsdafakean</li>
-<ul>
-<h5>ERD Diagram</h5>
-<p> </p>
-<h5>Sequence Diagram</h5>
-<p> </p>
+<h3>Introduction</h3>
+
+<h3>Objective</h3>
+
+<h3>Features & Functionality</h3>
+
+    <ul>
+        <li>Registration form to publish the event</li>
+        <li>Registration form to join the event</li>
+        <li>Registration form to recruit committee</li>
+        <li>Owner's event can see list of attendees</li>
+        <li>User's profile</li>
+        <li>search bar and filter keyword</li>
+    </ul>
+
+<h3>ERD Diagram</h3>
+
+<h3>Sequence Diagram</h3>
