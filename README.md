@@ -1,4 +1,5 @@
-<h4>Title: Event Management System</h4>
+#Title: Event Management System
+
 <br>
 <h3>Group Members:</h3>
 <br>
