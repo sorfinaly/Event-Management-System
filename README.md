@@ -34,4 +34,7 @@
 
 <h3>ERD Diagram</h3>
 
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/32761b56-9e7c-4dfb-a7b5-1c84d67cfc00)
+
+
 <h3>Sequence Diagram</h3>
