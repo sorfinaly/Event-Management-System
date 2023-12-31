@@ -38,3 +38,5 @@
 
 
 <h3>Sequence Diagram</h3>
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/498c5051-25bd-4a2c-9e07-a479f455983a)
