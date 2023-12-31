@@ -11,7 +11,7 @@
 
 <h3>Introduction</h3>
 
-<p> Welcome to the IIUM Event Management System! This system is designed to streamline and simplify the process of planning, organizing, and managing events within the IIUM environment. A robust platform designed to revolutionize the way events are organized and executed. Whether you're a student, a student organization, faculty member, or university staff, this system aims to provide a centralized platform for efficient event coordination between various people-in-charge. It provides a comprehensive solution for coordinating diverse events ranging from academic conferences to student-led activities. Facilitates seamless communication through built-in messaging features, reducing the need for external communication channels. ConsolidateS all event-related information, communication, and resources in one accessible platform </p>
+<p style="text-align: justify"> Welcome to the IIUM Event Management System! This system is designed to streamline and simplify the process of planning, organizing, and managing events within the IIUM environment. A robust platform designed to revolutionize the way events are organized and executed. Whether you're a student, a student organization, faculty member, or university staff, this system aims to provide a centralized platform for efficient event coordination between various people-in-charge. It provides a comprehensive solution for coordinating diverse events ranging from academic conferences to student-led activities. Facilitates seamless communication through built-in messaging features, reducing the need for external communication channels. ConsolidateS all event-related information, communication, and resources in one accessible platform </p>
 
 <h3>System Requirements</h3>
 <ul>
