@@ -44,8 +44,13 @@
 
 <h3>Website Mockups</h3>
 
-1. Login Page
+1. Login and Home Page
 
-2. Sign Up page
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/a1fd21b5-7a5d-474d-aa18-97bf0daeecc2)
 
-3. 
+3. Sign Up page
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/cfe07ecf-8355-4e91-8af6-ec2a289c4553)
+
+
+4. 
