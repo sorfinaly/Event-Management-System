@@ -40,3 +40,12 @@
 <h3>Sequence Diagram</h3> <br>
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/498c5051-25bd-4a2c-9e07-a479f455983a)
+
+
+<h3>Website Mockups</h3>
+
+1. Login Page
+
+2. Sign Up page
+
+3. 
