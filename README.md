@@ -1,3 +1,4 @@
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/da30719b-51e4-4b87-a13f-6cda4a12ad45)
 
 <h2>Title: IIUM Event Management System</h2>
 <h3>Group Members:</h3><br>
