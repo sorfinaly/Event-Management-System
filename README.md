@@ -45,20 +45,10 @@ Prepared for: DR. MOHD KHAIRUL AZMI BIN HASSAN
 
 The objective of the IIUM Event Management System is to streamline and simplify the process of planning, organizing, and managing events within the International Islamic University Malaysia (IIUM) environment. The website aims to serve as a centralized platform, providing comprehensive solutions for efficient event coordination among various stakeholders, including students, student organizations, faculty members, and university staff. 
 
-<b>1. Efficiency in Event Planning:</b>
-Event planning efficiency involves automating and streamlining procedures to save time and money, as well as offering an intuitive user interface that makes it simple for users to create, manage, and schedule events.
-
-<b>2. Centralized Event Coordination: </b>
-By combining resources and information pertaining to events onto a single, easily accessible platform, this system serves as a central hub for effectively organizing a variety of events inside the IIUM ecosystem.
-
-<b>3. Enhance Communication Skills: </b>
-By facilitating smooth communication between event planners, attendees, sponsors, and other important stakeholders, built-in messaging features help to eliminate the need for external communication channels.
-
-<b>4. Encouraging Event Organizers: </b>
-Providing a complete solution suited to IIUM's particular requirements, encouraging a lively campus culture, and equipping event organizers with tools and features that improve their capacity to carry out outstanding and unforgettable events.
-
-<b>5. Contribution to Community Building: </b>
-Understanding how important event management is to forming the culture of the IIUM community, we work to promote community building by encouraging teamwork and producing memorable experiences for both IIUM staffs and students.
+<b>1. Provide a centralized platform to publish any program-related details.</b>
+<b>2. Ease the event organizers to recruit program committee.</b>
+<br>3. Help to promote the upcoming events to a bigger crowd.</b>
+<br>4. Provide students a platform to easily join more programs for extra co-curricular.</b>
 
 <h3>Features & Functionality</h3>
 <ul>
