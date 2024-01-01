@@ -83,30 +83,37 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 
 
 3. Homepage
+
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/3ec7e3e7-52d1-4276-80be-13b0d88bc258)
 
 
 4. Create an Event 
+
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/da8bec46-bb02-47cd-bdd5-88d2ba800f84)
 
 
 5. Event Details - List of Participants
+
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/c222f374-0810-4782-b31b-3c09eb1d24fc)
 
 
 6. Event Details - List of Committee
+
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/69bd1498-dd3e-4282-b9df-66dcdd76634c)
 
 
 7. Join as Participant - Free
+
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/38b88fbb-7915-482a-9d41-e75651ffa85e)
 
 
 8. Join as Participant - Fee
+
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/3eb6ce8e-3b4a-4c54-83b9-142fc7d11cdd)
 
 
 9. Join as Committee
+
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/882564e9-a452-45da-add0-51fa66623b45)
 
 
