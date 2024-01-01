@@ -110,4 +110,9 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 9. Join as Committee
 
 
-10. User Profile 
+10. User Profile
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/528a5ed8-4e04-46d4-a071-af3e507dc358)
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/f1c4d074-9851-48f6-8850-419d20ed249e)
+
+
