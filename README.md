@@ -83,28 +83,36 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 
 
 4. Homepage
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/3ec7e3e7-52d1-4276-80be-13b0d88bc258)
 
 
-5. Create an Event
-   
-![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/154775061/30763963-6a37-446e-8d02-7b3787d7ebb5)
+5. Create an Event 
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/da8bec46-bb02-47cd-bdd5-88d2ba800f84)
 
 
-6. Event Details
+6. Event Details - List of Participants
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/c222f374-0810-4782-b31b-3c09eb1d24fc)
 
 
-7. Join as Participant - Free
+7. Event Details - List of Committee
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/69bd1498-dd3e-4282-b9df-66dcdd76634c)
 
 
-8. Join as Participant - Fee
+8. Join as Participant - Free
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/38b88fbb-7915-482a-9d41-e75651ffa85e)
 
 
-9. Join as Committee
+9. Join as Participant - Fee
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/3eb6ce8e-3b4a-4c54-83b9-142fc7d11cdd)
 
 
-10. User Profile
+10. Join as Committee
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/882564e9-a452-45da-add0-51fa66623b45)
 
-![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/528a5ed8-4e04-46d4-a071-af3e507dc358)
-![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/f1c4d074-9851-48f6-8850-419d20ed249e)
+
+11. User Profile
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/aa41901a-7c7f-4838-bfb0-bb2f0abf1aae)
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/bfd28ef6-489c-4008-b5b0-f765eae1f55c)
 
 
