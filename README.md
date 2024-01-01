@@ -40,8 +40,7 @@
 
 <h3>ERD Diagram</h3>
 
-![Database ER diagram (crow's foot) (3)](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/e5fc4cb4-a9c1-4f3f-99b9-689d8a08fa55)
-
+![erd diagram](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/2eb7370b-8bf6-4db7-9310-0870fffef40c)
 
 <h3>Sequence Diagram</h3> <br>
 
