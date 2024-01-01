@@ -70,6 +70,8 @@ Understanding how important event management is to forming the culture of the II
 
 <h3>ERD Diagram</h3>
 
+In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, we architecturally represent the core functionalities and interactions within the system. The ERD summarizes the system's processes while emphasizing the relationships and properties of the entities involved. 
+
 ![erd diagram](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/2eb7370b-8bf6-4db7-9310-0870fffef40c)
 
 <h3>Sequence Diagram</h3> <br>
