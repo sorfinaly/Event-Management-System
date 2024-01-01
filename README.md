@@ -95,7 +95,9 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 4. Homepage
 
 
-5. Create an Event 
+5. Create an Event
+   
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/154775061/30763963-6a37-446e-8d02-7b3787d7ebb5)
 
 
 6. Event Details
