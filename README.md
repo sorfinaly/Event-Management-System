@@ -12,11 +12,8 @@
 <h3>Introduction</h3>
 
 <p style='text-align: justify;'>
-Welcome to the IIUM Event Management System! This system is designed to streamline and simplify the process of planning, organizing, and managing events within the IIUM environment. A robust platform designed to revolutionize the way events are organized and executed. Whether you're a student, a student organization, faculty member, or university staff, this system aims to provide a centralized platform for efficient event coordination between various people-in-charge. It provides a comprehensive solution for coordinating diverse events ranging from academic conferences to student-led activities. Facilitates seamless communication through built-in messaging features, reducing the need for external communication channels. Consolidates all event-related information, communication, and resources in one accessible platform.
+    Welcome to the IIUM Event Management System! This system is designed to streamline and simplify the process of planning, organizing, and managing events within the IIUM environment. A robust platform designed to revolutionize the way events are organized and executed. Whether you're a student, a student organization, faculty member, or university staff, this system aims to provide a centralized platform for efficient event coordination between various people-in-charge. It provides a comprehensive solution for coordinating diverse events ranging from academic conferences to student-led activities. Facilitates seamless communication through built-in messaging features, reducing the need for external communication channels. Consolidates all event-related information, communication, and resources in one accessible platform.
 </p>
-
-
-[Mockup for Event In IIUM](https://www.figma.com/file/VbhNzIFFTT0QNdECdacIFH/Mockup---Event-Management-System?type=design&node-id=20%3A36683&mode=design&t=gOKgIql7cgnpLgZ6-1)
 
 <h3>System Requirements</h3>
 <ul>
@@ -58,4 +55,22 @@ Welcome to the IIUM Event Management System! This system is designed to streamli
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/cfe07ecf-8355-4e91-8af6-ec2a289c4553)
 
 
-4. 
+4. Homepage
+
+
+5. Create an Event 
+
+
+6. Event Details
+
+
+7. Join as Participant - Free
+
+
+8. Join as Participant - Fee
+
+
+9. Join as Committee
+
+
+10. User Profile 
