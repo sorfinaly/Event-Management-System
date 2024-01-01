@@ -45,8 +45,8 @@ Prepared for: DR. MOHD KHAIRUL AZMI BIN HASSAN
 
 The objective of the IIUM Event Management System is to streamline and simplify the process of planning, organizing, and managing events within the International Islamic University Malaysia (IIUM) environment. The website aims to serve as a centralized platform, providing comprehensive solutions for efficient event coordination among various stakeholders, including students, student organizations, faculty members, and university staff. 
 
-<b>1. Provide a centralized platform to publish any program-related details.</b>
-<b>2. Ease the event organizers to recruit program committee.</b>
+<br>1. Provide a centralized platform to publish any program-related details.</b>
+<br>2. Ease the event organizers to recruit program committee.</b>
 <br>3. Help to promote the upcoming events to a bigger crowd.</b>
 <br>4. Provide students a platform to easily join more programs for extra co-curricular.</b>
 
