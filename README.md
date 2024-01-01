@@ -10,6 +10,8 @@
 | SIDDIQUI MARYAM                | 2115928   |
 | KHAIRINA MAISARAH BINTI HUSNY  | 2129358   |
 
+Prepared for: DR. MOHD KHAIRUL AZMI BIN HASSAN
+
 <h3>Introduction</h3>
 
 <p style='text-align: justify;'>
