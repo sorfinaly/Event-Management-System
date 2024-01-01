@@ -13,7 +13,16 @@
 <h3>Introduction</h3>
 
 <p style='text-align: justify;'>
-    Welcome to the IIUM Event Management System, your gateway to seamless event coordination within the IIUM environment! This innovation platform is meticulously designed for students, students organizations, kulliyyah members, and university staff alike to streamline and simplify the process of planning, organizing, and managing events within the IIUM environment. A robust platform designed to revolutionize the way events are organized and executed. Whether you're a student, a student organization, faculty member, or university staff, this system aims to provide a centralized platform for efficient event coordination between various people-in-charge. It provides a comprehensive solution for coordinating diverse events ranging from academic conferences to student-led activities. Facilitates seamless communication through built-in messaging features, reducing the need for external communication channels. Consolidates all event-related information, communication, and resources in one accessible platform.
+    Welcome to the IIUM Event Management System, your gateway to seamless event coordination within the IIUM environment! 
+
+    The IIUM Event Management System has been developed with a keen understanding that event management plays a critical role in shaping the vibrant culture and community spirit at the International Islamic University Malaysia (IIUM).  Recognizing the importance of efficient event management, this system is meticulously designed for students, students organizations, kulliyyah members, and university staff alike to streamline and simplify the process of planning, organizing, and managing events within the IIUM environment. 
+
+    A robust platform designed to revolutionize the way events are organized and executed. This IIUM Event Management System aims to provide a centralized platform for efficient event coordination between various people-in-charge. It provides a comprehensive solution for coordinating diverse events ranging from academic conferences to student-led activities. It consolidates all event-related information, communication, and resources, providing organizers with the necessary tools to execute remarkable events.
+    
+    Event management plays a critical role in shaping the culture of our community, and our system is here to empower you in that journey. It's not just an event management tool; it's a comprehensive solution tailored for the unique needs of IIUM communities. Facilitates seamless communication through built-in messaging features, reducing the need for external communication channels. Consolidates all event-related information, communication, and resources in one accessible platform. With features such as centralized event data, real-time updates, and efficient communication tools, the system ensures that event planning becomes a seamless and enjoyable experience for all stakeholders.
+
+    Join us on this exciting journey as we redefine event management within the IIUM community. Welcome to a new era of efficiency, collaboration, and event excellence! Together, let's make every event an extraordinary celebration of the unique spirit that defines IIUM.
+
 
 
 
