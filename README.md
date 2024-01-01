@@ -87,7 +87,7 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/3ec7e3e7-52d1-4276-80be-13b0d88bc258)
 
 
-4. Create an Event 
+4. Event Registration Form
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/091e91dc-5c56-41ec-ba50-46dd3f3d9d68)
 
