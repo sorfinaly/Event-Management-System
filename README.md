@@ -55,6 +55,9 @@ By facilitating smooth communication between event planners, attendees, sponsors
 <b>4. Encouraging Event Organizers: </b>
 Providing a complete solution suited to IIUM's particular requirements, encouraging a lively campus culture, and equipping event organizers with tools and features that improve their capacity to carry out outstanding and unforgettable events.
 
+<b>5. Contribution to Community Building: </b>
+Understanding how important event management is to forming the culture of the IIUM community, we work to promote community building by encouraging teamwork and producing memorable experiences for both IIUM staffs and students.
+
 <h3>Features & Functionality</h3>
 <ul>
     <li>Registration form to publish the event - CRUD Operations</li>
