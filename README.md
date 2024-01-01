@@ -94,7 +94,7 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 
 5. Event Details - List of Participants
 
-![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/c222f374-0810-4782-b31b-3c09eb1d24fc)
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/1285ef94-86a8-414c-a55b-058c254c52c3)
 
 
 6. Event Details - List of Committee
