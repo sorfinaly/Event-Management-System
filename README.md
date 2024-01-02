@@ -55,7 +55,7 @@ The objective of the IIUM Event Management System is to streamline and simplify 
     <li>Registration form to publish the event</li>
     <li>Registration form to join the event</li>
     <li>Registration form to recruit committee</li>
-    <li>Owner's event can see list of attendees</li>
+    <li>Each events can see list of attendees and committees</li>
     <li>User's profile </li>
     <li>search bar and filter keyword</li>
 </ul>
