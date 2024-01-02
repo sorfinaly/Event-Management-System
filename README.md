@@ -82,7 +82,7 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/b70b972b-4e44-437c-99fc-5cd824aace50)
 
-4. Homepage
+4. Landing page
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/3ec7e3e7-52d1-4276-80be-13b0d88bc258)
 
