@@ -75,14 +75,14 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 
 1. Login and Home Page
 
-![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/a1fd21b5-7a5d-474d-aa18-97bf0daeecc2)
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/049ef455-a80c-4e78-9e60-36711e0f9b4c)
+
 
 2. Sign Up page
 
-![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/cfe07ecf-8355-4e91-8af6-ec2a289c4553)
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/b70b972b-4e44-437c-99fc-5cd824aace50)
 
-
-3. Homepage
+4. Homepage
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/3ec7e3e7-52d1-4276-80be-13b0d88bc258)
 
