@@ -6,15 +6,13 @@
     <div class="container position-relative">
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-          <h2>Welcome to <span>Impact</span></h2>
-          <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <h2 style="font-size: 90px">Centralized Event System <span>in IIUM</span></h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" class="btn-get-started">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
-          <img src="assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+          <img src="assets/img/homepage.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
         </div>
       </div>
     </div>
@@ -22,7 +20,7 @@
     <div class="icon-boxes position-relative">
       <div class="container position-relative">
         <div class="row gy-4 mt-5">
-
+{{--
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-easel"></i></div>
@@ -49,10 +47,11 @@
               <div class="icon"><i class="bi bi-command"></i></div>
               <h4 class="title"><a href="" class="stretched-link">Nemo Enim</a></h4>
             </div>
-          </div><!--End Icon Box -->
+          </div><!--End Icon Box --> --}}
 
         </div>
       </div>
+
     </div>
 
     </div>
@@ -60,6 +59,20 @@
   <!-- End Hero Section -->
 
   <main id="main">
+
+    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <div class="card mb-2"
+          style="border-radius: 10em; background: linear-gradient(to right, #168276, #168276);">
+          <div class="card-body p-2">
+            <div class="input-group input-group-lg">
+              <input type="text" class="form-control form-control-lg rounde bg-transparent text-white"
+                placeholder="Search Event" aria-label="Search Event" aria-describedby="basic-addon2" />
+              <span class="input-group-text border-0" id="basic-addon2"><i
+                  class="fas fa-search fa-lg text-white"></i></span>
+            </div>
+          </div>
+        </div>
+     </div>
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
