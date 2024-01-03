@@ -72,24 +72,20 @@
           </div>
         </div>
      </div>
-
+{{--
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>About Us</h2>
-          <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
-        </div>
 
-        <div class="row gy-4">
-          <div class="col-lg-6">
+        <div class="row gy-4" >
+          <div class="col-lg-6" >
             <h3>Voluptatem dignissimos provident quasi corporis</h3>
             <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
             <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
             <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" >
             <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -389,7 +385,7 @@
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    {{-- </section><!-- End Testimonials Section --> --}}
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio sections-bg">
@@ -405,9 +401,9 @@
           <div>
             <ul class="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-product">Product</li>
-              <li data-filter=".filter-branding">Branding</li>
+              <li data-filter=".filter-app">This Month</li>
+              <li data-filter=".filter-product">This Year</li>
+              <li data-filter=".filter-branding">Past</li>
               <li data-filter=".filter-books">Books</li>
             </ul><!-- End Portfolio Filters -->
           </div>
@@ -540,7 +536,7 @@
 
       </div>
     </section><!-- End Portfolio Section -->
-
+{{--
     <!-- ======= Our Team Section ======= -->
     <section id="team" class="team">
       <div class="container" data-aos="fade-up">
@@ -954,6 +950,6 @@
       </div>
     </section><!-- End Contact Section -->
 
-  </main><!-- End #main -->
+  </main><!-- End #main --> --}}
 
   @endsection
