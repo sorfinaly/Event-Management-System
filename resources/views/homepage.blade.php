@@ -63,8 +63,8 @@
     <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 mx-auto float-right">
         <div class="card mb-2" style="border-radius: 10em; background: linear-gradient(to right, #168276, #168276);">
           <div class="card-body p-2">
-            <div class="input-group input-group-sm"> <input type="text" class="form-control form-control-sm rounded bg-transparent text-white" placeholder="Search Event" aria-label="Search Event" aria-describedby="basic-addon2" style="height: 45px;" /> <span class="input-group-text border-0" id="basic-addon2">
-                <button class="search" style="font-size: 18px;"> <i class="fa fa-search" style="font-size: 24px; color:#757575"></i> </button>
+            <div class="input-group input-group-sm"> <input type="text" class="form-control form-control-sm rounded bg-transparent text-white" id="search" placeholder="Search Event" aria-label="Search Event" aria-describedby="basic-addon2" style="height: 45px;" /> <span class="input-group-text border-0" id="basic-addon2">
+                <button class="search" style="font-size: 18px;"> <i class="fa fa-search" style="font-size: 24px; color:#e79494"></i> </button>
               </span>
             </div>
           </div>
@@ -402,7 +402,6 @@
               <li data-filter=".filter-app">This Month</li>
               <li data-filter=".filter-product">This Year</li>
               <li data-filter=".filter-branding">Past</li>
-              <li data-filter=".filter-books">Books</li>
             </ul><!-- End Portfolio Filters -->
           </div>
 

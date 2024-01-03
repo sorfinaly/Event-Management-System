@@ -57,6 +57,10 @@
   color: #7a6767;
 }
 
+#search::placeholder{
+    color: #eee2e2;
+}
+
 .search{
     background-color: transparent;
     background-repeat: no-repeat;
@@ -124,7 +128,7 @@ h2{
   <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="/" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>EVENT IN IIUM   <span>.</span></h1>
@@ -172,7 +176,7 @@ h2{
     <div class="container">
         <div class="row gy-4 justify-content-between">
         <div class="col-lg-5 col-md-12 footer-info text-center">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="/" class="logo d-flex align-items-center">
             <span class="title">EVENT IN IIUM </span>
           </a>
           <p class="event-description">Your one-stop platform for seamless event management. Create, organize, and manage events effortlessly. Join as a committee member to help shape memorable experiences or participate in diverse events. Simplifying your event journey at IIUM.</p>
