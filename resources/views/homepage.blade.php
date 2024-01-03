@@ -60,15 +60,14 @@
 
   <main id="main">
 
-    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+    <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 mx-auto float-right">
         <div class="card mb-2"
           style="border-radius: 10em; background: linear-gradient(to right, #168276, #168276);">
           <div class="card-body p-2">
             <div class="input-group input-group-lg">
               <input type="text" class="form-control form-control-lg rounde bg-transparent text-white"
                 placeholder="Search Event" aria-label="Search Event" aria-describedby="basic-addon2" />
-              <span class="input-group-text border-0" id="basic-addon2"><i
-                  class="fas fa-search fa-lg text-white"></i></span>
+              <span class="input-group-text border-0" id="basic-addon2"><button class = search style="font-size:28px"> <i class="fa fa-search" style="font-size:48px;color:#757575"></i></button></span>
             </div>
           </div>
         </div>

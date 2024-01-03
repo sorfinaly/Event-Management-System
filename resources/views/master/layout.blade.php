@@ -28,6 +28,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- =======================================================
   * Template Name: Impact
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -49,32 +52,30 @@
   box-shadow: inset 0 0 0 1px transparent;
 }
 
-.btn-link:hover {
-  color: #f0b6d5;
-  background-color: rgba(255, 255, 255, .35);
-}
-
-.btn-link:active,
-.btn-link.active {
-  color: #f0b6d5;
-  background-color: rgba(255, 255, 255, .35);
-}
-
-.btn-link:focus,
-.btn-link.focus {
-  color: #f0b6d5;
-  background-color: rgba(255, 255, 255, .35);
-}
-
-.btn-link:active:focus,
-.btn-link.active:focus {
-  color: #f0b6d5;
-  background-color: rgba(255, 255, 255, .35);
-}
 
 .form-control::placeholder {
   color: #fff;
 }
+
+.search{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+
+#basic-addon2{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
 </style>
 </head>
 
