@@ -28,3 +28,11 @@ Route::get('/formcommittee', function () {
 Route::get('/events', function () {
     return view('eventdetails');
 });
+
+Route::get('/formparticipantfee', function () {
+    return view('formparticipantfee');
+});
+
+Route::get('/formparticipantfree', function () {
+    return view('formparticipantfree');
+});

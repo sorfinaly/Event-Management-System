@@ -54,7 +54,7 @@
 
 
 .form-control::placeholder {
-  color: #fff;
+  color: #7a6767;
 }
 
 .search{
