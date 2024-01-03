@@ -8,7 +8,7 @@
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
           <h2 style="font-size: 90px">Centralized Event System <span>in IIUM</span></h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="/" class="btn-get-started">Get Started</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
@@ -61,17 +61,15 @@
   <main id="main">
 
     <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 mx-auto float-right">
-        <div class="card mb-2"
-          style="border-radius: 10em; background: linear-gradient(to right, #168276, #168276);">
+        <div class="card mb-2" style="border-radius: 10em; background: linear-gradient(to right, #168276, #168276);">
           <div class="card-body p-2">
-            <div class="input-group input-group-lg">
-              <input type="text" class="form-control form-control-lg rounde bg-transparent text-white"
-                placeholder="Search Event" aria-label="Search Event" aria-describedby="basic-addon2" />
-              <span class="input-group-text border-0" id="basic-addon2"><button class = search style="font-size:28px"> <i class="fa fa-search" style="font-size:48px;color:#757575"></i></button></span>
+            <div class="input-group input-group-sm"> <input type="text" class="form-control form-control-sm rounded bg-transparent text-white" placeholder="Search Event" aria-label="Search Event" aria-describedby="basic-addon2" style="height: 45px;" /> <span class="input-group-text border-0" id="basic-addon2">
+                <button class="search" style="font-size: 18px;"> <i class="fa fa-search" style="font-size: 24px; color:#757575"></i> </button>
+              </span>
             </div>
           </div>
         </div>
-     </div>
+      </div>
 {{--
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Impact Bootstrap Template - Index</title>
+  <title>Event in IIUM</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -76,6 +76,29 @@
     outline: none;
 }
 
+.form-background {
+  background-color: #d3e4e3; /* Adjust background color as needed */
+  border-radius: 20px; /* Adjust border radius for curvature */
+  padding: 70px; /* Add padding for spacing */
+  margin: 70px; /* Add margin for spacing */
+  margin-top: 20px;
+}
+
+.background{
+    padding: 10px; /* Add padding for spacing */
+    margin-top: 150px;
+}
+
+h2{
+    color: #585555;
+    font-weight: 700;
+    text-align: left;
+    padding-left:80px;
+    padding-bottom: 20px;
+
+}
+
+
 
 </style>
 </head>
@@ -108,10 +131,10 @@
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">Events</a></li>
-          <li><a href="#services">Profile</a></li>
-          <li><a href="#portfolio">Logout</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/profile">Profile</a></li>
+          <li><a href="/">Logout</a></li>
           {{-- <li><a href="#team">Team</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
@@ -161,9 +184,9 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Features</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Event Details</a></li>
-            <li><a href="#">Profile</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/events">Event Details</a></li>
+            <li><a href="/profile">Profile</a></li>
           </ul>
         </div>
 
