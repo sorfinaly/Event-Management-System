@@ -50,7 +50,27 @@
         box-sizing: border-box;
         font-family: "Poppins", sans-serif;
     }
+    .image {
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
 
+}
+    img {
+        width: auto;
+        height: auto;
+        margin-left: -42%;
+        object-fit: cover;
+}
+
+
+    .form {
+        display: inline-block;
+        vertical-align: top;
+        width: 45%;
+        margin-left: 12%;
+
+}
     .background{
         display: flex;
         justify-content: center;
@@ -60,6 +80,7 @@
         background: linear-gradient(90deg, #ffffff 50%, #018274 50%);
     }
     .wrapper {
+        text-align: center;
         width: 80%;
         border: 2px solid rgba(255, 255, 255, 0.1);
         color: #000000;
