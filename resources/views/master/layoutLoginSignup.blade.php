@@ -44,13 +44,63 @@
 </head>
 <style>
 
-    * {
+    *   {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: "Poppins", sans-serif;
     }
+<<<<<<< Updated upstream
 
+=======
+
+    .image {
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+
+    }
+
+    img {
+        width: auto;
+        height: auto;
+        margin-left: -27%;
+        object-fit: cover;
+    }
+
+
+    .form {
+        display: inline-block;
+        vertical-align: top;
+        width: 45%;
+        margin-left:13%;
+
+    }
+
+    .imageSignUp {
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+
+    }
+
+    #regis {
+        width: 600px;
+        height: 600px;
+        margin-left: -10%;
+        object-fit: cover;
+    }
+
+
+    .formSignUp {
+        display: inline-block;
+        vertical-align: top;
+        width: 45%;
+        margin-left: -95%;
+
+}
+
+>>>>>>> Stashed changes
     .background{
         display: flex;
         justify-content: center;
@@ -58,6 +108,7 @@
         min-height:100vh;
         height: 100%;
         background: linear-gradient(90deg, #ffffff 50%, #018274 50%);
+
     }
     .wrapper {
         width: 80%;
@@ -83,10 +134,20 @@
     .wrapper h1{
         font-size: 36px;
         text-align: center
+    }
 
+    .wrapper h2{
+        font-size: 30px;
+        text-align: center
     }
 
     .wrapper h6{
+        font-size: 16px;
+        text-align: center;
+
+    }
+
+    .wrapper h5{
         font-size: 16px;
         text-align: center;
 
@@ -102,25 +163,18 @@
         width: 100%;
         height: 100%;
         background: transparent;
+        background-color: rgba(231,238,238,255);
         border: none;
         outline: none;
-        border: 2px solid rgba(255, 255, 255, .2);
+        border: 2px solid rgba(255, 255, 255, 0.2);
         border-radius: 40px;
         font-size: 16px;
-        color: #ffffff;
+        color: #000000;
         padding: 20px 45px 20px 20px;
     }
 
     .input-box input::placeholder{
-        color: #ffffff;
-    }
-
-    .input-box i {
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 20px;
+        color: rgb(122, 122, 122);
     }
 
     .wrapper .remember-forgot {
@@ -134,6 +188,7 @@
         accent-color: #ffffff;
         margin-right: 3px;
     }
+
 
     .remember-forgot a {
         color: #000000;
@@ -157,6 +212,7 @@
         color: #ffffff;
         font-weight: 600;
     }
+
 
     .wrapper .register-link {
         font-size: 14.5px;
