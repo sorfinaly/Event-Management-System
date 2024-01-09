@@ -26,6 +26,11 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/homepage', function () {
+    return view('homepage');
+});
+
+
 Route::get('/register', function () {
     return view('registration');
 });
@@ -39,7 +44,7 @@ Route::get('/formcommittee', function () {
 });
 
 Route::get('/events', function () {
-    return view('eventdetails');
+    return view('createevent');
 });
 
 Route::get('/formparticipantfee', function () {
