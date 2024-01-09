@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthManager;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,11 +20,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+<<<<<<< Updated upstream
     return view('Login');
 });
 
 Route::get('/login', function () {
     return view('login');
+=======
+    return view('registration');
+})->name('home');
+
+Route::get('/login', [AuthManager::class, 'login'])->name('login'); //pass 'login function that has created in controller
+Route::post('/login', [AuthManager::class, 'loginPost'])->name('login.post');
+
+Route::get('/register', [AuthManager::class, 'registration'])->name('registration'); //pass 'register function that has created in controller
+Route::post('/register', [AuthManager::class, 'registrationPost'])->name('registration.post');
+
+Route::get('/formparticipantfree', function () {
+    return view('formparticipantfree');
+>>>>>>> Stashed changes
 });
 
 Route::get('/homepage', function () {
