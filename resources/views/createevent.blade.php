@@ -9,7 +9,7 @@
 
     <div class="form-background">
 
-        <form>
+        <form method="POST" action="{{ route('createevent.store') }}">
             <div class="form-row">
                 <div class="form-group col-md-6">
                 <label for="event-name">Event Name</label>
@@ -57,11 +57,36 @@
               <div class="form-group col-md-6">
                 <label for="event-category">Event Category</label>
                 <select id="event-category" class="form-control">
+                    <option value="academic">Academic</option>
+                    <option value="cultural">Cultural</option>
+                    <option value="sports">Sports</option>
+                    <option value="career">Career Development</option>
+                    <option value="social">Social</option>
+                    <option value="charity">Charity/Community Service</option>
+                    <option value="science">Science and Research</option>
+                    <option value="technology">Technology</option>
+                    <option value="arts">Arts and Music</option>
+                    <option value="workshop">Workshops and Seminars</option>
+                    <option value="health">Health and Wellness</option>
                   </select>
               </div>
               <div class="form-group col-md-6">
                 <label for="event-format">Event Format</label>
                 <select id="event-format" class="form-control">
+                    <option value="conference">Conference</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="seminar">Seminar</option>
+                    <option value="lecture">Lecture</option>
+                    <option value="panelDiscussion">Panel Discussion</option>
+                    <option value="symposium">Symposium</option>
+                    <option value="presentation">Presentation</option>
+                    <option value="competition">Competition</option>
+                    <option value="training">Training</option>
+                    <option value="exhibition">Exhibition</option>
+                    <option value="performance">Performance</option>
+                    <option value="socialGathering">Social Gathering</option>
+                    <option value="hackathon">Hackathon</option>
+                    <option value="fundraiser">Fundraiser</option>
                   </select>
               </div>
             </div>

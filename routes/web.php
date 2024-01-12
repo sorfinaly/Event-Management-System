@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthManager;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,13 +21,6 @@ use App\Http\Controllers\AuthManager;
 */
 
 Route::get('/', function () {
-<<<<<<< Updated upstream
-    return view('Login');
-});
-
-Route::get('/login', function () {
-    return view('login');
-=======
     return view('registration');
 })->name('home');
 
@@ -38,7 +32,6 @@ Route::post('/register', [AuthManager::class, 'registrationPost'])->name('regist
 
 Route::get('/formparticipantfree', function () {
     return view('formparticipantfree');
->>>>>>> Stashed changes
 });
 
 Route::get('/homepage', function () {
@@ -58,9 +51,9 @@ Route::get('/formcommittee', function () {
     return view('formcommittee');
 });
 
-Route::get('/events', function () {
-    return view('createevent');
-});
+// Route::get('/createevent', function () {
+//     return view('createevent');
+// });
 
 Route::get('/formparticipantfee', function () {
     return view('formparticipantfee');
@@ -69,3 +62,13 @@ Route::get('/formparticipantfee', function () {
 Route::get('/formparticipantfree', function () {
     return view('formparticipantfree');
 });
+
+
+// Route to display the list of events
+Route::get('/', [EventController::class, 'index']);
+
+// Route to show the form for creating a new event
+Route::get('/createevent', [EventController::class, 'create']);
+
+// Route to store a newly created event
+Route::post('/createevent', [EventController::class, 'store']);
