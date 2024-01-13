@@ -44,7 +44,7 @@
 </head>
 <style>
 
-    *   {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -54,46 +54,23 @@
         display: inline-block;
         vertical-align: top;
         width: 40%;
-    }
 
-    /* img {
-        width: auto;
-        height: auto;
-        margin-left: -27%;
+}
+    img {
+        width: 800px;
+        height: 800px;
+        margin-left: -15%;
         object-fit: cover;
-    } */
-
+}
 
 
     .form {
         display: inline-block;
         vertical-align: top;
         width: 45%;
-        margin-left:13%;
+        margin-left: -95%;
 
-    }
-
-    .imageSignUp {
-        display: inline-block;
-        vertical-align: top;
-        width: 40%;
-
-    }
-
-    #regis {
-        width: 600px;
-        height: 600px;
-        margin-left: -10%;
-        object-fit: cover;
-    }
-
-
-    .formSignUp {
-        display: inline-block;
-        vertical-align: top;
-        width: 45%;
-    }
-
+}
     .background{
         display: flex;
         justify-content: center;
@@ -101,7 +78,6 @@
         min-height:100vh;
         height: 100%;
         background: linear-gradient(90deg, #ffffff 50%, #018274 50%);
-
     }
     .wrapper {
         text-align: center;
@@ -128,20 +104,10 @@
     .wrapper h1{
         font-size: 36px;
         text-align: center
-    }
 
-    .wrapper h2{
-        font-size: 30px;
-        text-align: center
     }
 
     .wrapper h6{
-        font-size: 16px;
-        text-align: center;
-
-    }
-
-    .wrapper h5{
         font-size: 16px;
         text-align: center;
 
@@ -171,6 +137,14 @@
         color: rgb(122, 122, 122);
     }
 
+    .input-box i {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+    }
+
     .wrapper .remember-forgot {
         display: flex;
         justify-content: space-between;
@@ -182,7 +156,6 @@
         accent-color: #ffffff;
         margin-right: 3px;
     }
-
 
     .remember-forgot a {
         color: #000000;
@@ -206,7 +179,6 @@
         color: #ffffff;
         font-weight: 600;
     }
-
 
     .wrapper .register-link {
         font-size: 14.5px;

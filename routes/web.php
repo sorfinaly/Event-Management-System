@@ -40,6 +40,10 @@ Route::get('/formparticipantfree', function () {
     return view('formparticipantfree');
 });
 
+Route::get('/register', function () {
+    return view('registration');
+});
+
 Route::get('/profile', function () {
     return view('profile');
 });
