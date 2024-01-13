@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthManager;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,11 +20,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('Login');
-});
+    // Check if the 'loginId' session variable exists
+    if (session()->has('loginId')) {
+        // User is logged in, redirect to the homepage
+        return view('homepage');
+    } else {
+        // User is not logged in, open the registration page
+        return view('registration');
+    }
+})->name('home');
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/login', [AuthManager::class, 'login'])->name('login'); //pass 'login function that has created in controller
+Route::post('/login', [AuthManager::class, 'loginPost'])->name('login.post');
+
+Route::get('/register', [AuthManager::class, 'registration'])->name('registration'); //pass 'register function that has created in controller
+Route::post('/register', [AuthManager::class, 'registrationPost'])->name('registration.post');
+
+Route::get('/formparticipantfree', function () {
+    return view('formparticipantfree');
 });
 
 Route::get('/register', function () {
