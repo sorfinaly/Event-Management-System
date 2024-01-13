@@ -57,8 +57,8 @@ class AuthManager extends Controller
     }
 
     function logout(){
-        Session::flush();
+        session()->forget('loginId');
         Auth::logout();
-        return redirect(route('login'));
+        return redirect(route('home'));
     }
 }

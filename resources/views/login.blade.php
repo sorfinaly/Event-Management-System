@@ -44,10 +44,10 @@
           <a href="#">Forgot password?</a>
         </div>
 
-        <button type="submit" class="btn">Login</button>
+        <button type="submit" class="btn" id="primaryBtn">Login</button>
 
         <div class="register-link">
-          <p>Don't have an account? <a href="registration">Register</a></p>
+          <p>Don't have an account? <a href="register">Register</a></p>
         </div>
       </form>
     </div>

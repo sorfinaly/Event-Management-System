@@ -138,7 +138,7 @@ h2{
           <li><a href="/">Home</a></li>
           <li><a href="/events">Events</a></li>
           <li><a href="/profile">Profile</a></li>
-          <li><a href="/">Logout</a></li>
+          <li><a href="{{ route('logout') }}">Logout</a></li>
           {{-- <li><a href="#team">Team</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>

@@ -207,6 +207,20 @@
         font-weight: 600;
     }
 
+    #primaryBtn {
+        width: 100%;
+        height: 45px;
+        background: #018274;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 600;
+    }
+
 
     .wrapper .register-link {
         font-size: 14.5px;
