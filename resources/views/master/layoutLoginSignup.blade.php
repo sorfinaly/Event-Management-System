@@ -50,9 +50,6 @@
         box-sizing: border-box;
         font-family: "Poppins", sans-serif;
     }
-<<<<<<< Updated upstream
-
-=======
 
     .image {
         display: inline-block;
@@ -61,12 +58,12 @@
 
     }
 
-    img {
+    /* img {
         width: auto;
         height: auto;
         margin-left: -27%;
         object-fit: cover;
-    }
+    } */
 
 
     .form {
@@ -96,11 +93,8 @@
         display: inline-block;
         vertical-align: top;
         width: 45%;
-        margin-left: -95%;
+    }
 
-}
-
->>>>>>> Stashed changes
     .background{
         display: flex;
         justify-content: center;
