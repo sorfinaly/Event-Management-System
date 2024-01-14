@@ -13,7 +13,7 @@ class EventController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-{
+    {
         $events = DB::table('events')
             ->orderBy('id', 'asc')
             ->get();
@@ -47,11 +47,17 @@ class EventController extends Controller
             'event_category' => 'required|string|max:255',
             'event_format' => 'required|string|max:255',
             'event_description' => 'required|string',
-            'event_file' => 'nullable|string|max:255',
+            'event_img' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
+
+        if ($request->hasFile('event_img')) {
+            $imagePath = $request->file('event_img')->store('event_images', 'public');
+            $validatedData['event_img'] = $imagePath;
+        }
+
         // Create a new event instance
-        $event = new Event();
+        $event = new Event($validatedData);
         $event->event_name = $validatedData['event_name'];
         $event->priced_event = $validatedData['priced_event'];
         $event->fee = $validatedData['fee'];
@@ -62,13 +68,13 @@ class EventController extends Controller
         $event->event_category = $validatedData['event_category'];
         $event->event_format = $validatedData['event_format'];
         $event->event_description = $validatedData['event_description'];
-        $event->event_file = $validatedData['event_file'];
-
-        // Save the event to the database
+         $event->event_img = $validatedData['event_img'];
         $event->save();
 
         // Optionally, redirect the user after saving the event
         return redirect('/homepage');
+
+
     }
 
     /**

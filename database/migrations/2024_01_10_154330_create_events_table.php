@@ -13,17 +13,17 @@ return new class extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
-            $table->string('event_name');
+            $table->string('event_name')->nullable();
             $table->enum('priced_event', ['free', 'paid'])->nullable(); // Free or Paid event
             $table->decimal('fee', 8, 2)->nullable(); // Nullable fee column
             $table->date('event_date')->nullable();
-            $table->string('location');
-            $table->time('start_time');
-            $table->time('end_time');
+            $table->string('location')->nullable();
+            $table->time('start_time')->nullable();
+            $table->time('end_time')->nullable();
             $table->string('event_category')->nullable();
             $table->string('event_format')->nullable();
-            $table->text('event_description');
-            $table->string('event_file')->nullable(); // This column will store the path to the file
+            $table->text('event_description')->nullable();
+            $table->string('event_img')->nullable(); // This column will store the path to the file
             $table->timestamps();
         });
     }

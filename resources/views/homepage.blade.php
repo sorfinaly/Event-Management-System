@@ -20,34 +20,6 @@
     <div class="icon-boxes position-relative">
       <div class="container position-relative">
         <div class="row gy-4 mt-5">
-{{--
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-easel"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-            </div>
-          </div><!--End Icon Box -->
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-gem"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Sed ut perspiciatis</a></h4>
-            </div>
-          </div><!--End Icon Box -->
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-geo-alt"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Magni Dolores</a></h4>
-            </div>
-          </div><!--End Icon Box -->
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-command"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Nemo Enim</a></h4>
-            </div>
-          </div><!--End Icon Box --> --}}
 
         </div>
       </div>
@@ -71,210 +43,103 @@
         </div>
       </div>
 
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio sections-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Portfolio</h2>
-          <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
-        </div>
-
-        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
-
-          <div>
-            <ul class="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">This Month</li>
-              <li data-filter=".filter-product">This Year</li>
-              <li data-filter=".filter-branding">Past</li>
-            </ul><!-- End Portfolio Filters -->
-          </div>
-
-          <div class="row gy-4 portfolio-container">
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-books">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-books">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-books">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
         <div class="overlay-mf"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="contact-mf">
-                <div id="contact" class="box-shadow-full">
-                    <h5 class="title-left"> List of Students</h5>
-                      <button onclick = "document.location = '/createevent'" type="button" class="btn btn-primary">Add Student</button>
-                  <div class="row">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">Event Name</th>
-                                <th scope="col">Priced Event</th>
-                                <th scope="col">Fee</th>
-                                <th scope="col">Event Date</th>
-                                <th scope="col">Location</th>
-                                <th scope="col">Start Time</th>
-                                <th scope="col">End Time</th>
-                                <th scope="col">Event Category</th>
-                                <th scope="col">Event Format</th>
-                                <th scope="col">Event Description</th>
-                                <th scope="col">Event File</th>
-                            </tr>
-                        </thead>
-                            <tbody>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="contact-mf">
+                            <div id="contact" class="box-shadow-full">
+                                <h5 class="title-left"> List of Event (temporary table)</h5>
+                                <div class="row">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Event Name</th>
+                                                    <th scope="col">Priced Event</th>
+                                                    <th scope="col">Fee</th>
+                                                    <th scope="col">Event Date</th>
+                                                    <th scope="col">Location</th>
+                                                    <th scope="col">Start Time</th>
+                                                    <th scope="col">End Time</th>
+                                                    <th scope="col">Event Category</th>
+                                                    <th scope="col">Event Format</th>
+                                                    <th scope="col">Event Description</th>
+                                                    <th scope="col">Event Img</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
 
-                                @foreach ($events as $event)
-                                    <tr>
-                                        <td>{{ $event->event_name }}</td>
-                                        <td>{{ $event->priced_event }}</td>
-                                        <td>{{ $event->fee }}</td>
-                                        <td>{{ $event->event_date }}</td>
-                                        <td>{{ $event->location }}</td>
-                                        <td>{{ $event->start_time }}</td>
-                                        <td>{{ $event->end_time }}</td>
-                                        <td>{{ $event->event_category }}</td>
-                                        <td>{{ $event->event_format }}</td>
-                                        <td>{{ $event->event_description }}</td>
-                                        <td>{{ $event->event_file }}</td>
-                                    </tr>
+                                                @foreach ($events as $event)
+                                                    <tr>
+                                                        <td>{{ $event->event_name }}</td>
+                                                        <td>{{ $event->priced_event }}</td>
+                                                        <td>{{ $event->fee }}</td>
+                                                        <td>{{ $event->event_date }}</td>
+                                                        <td>{{ $event->location }}</td>
+                                                        <td>{{ $event->start_time }}</td>
+                                                        <td>{{ $event->end_time }}</td>
+                                                        <td>{{ $event->event_category }}</td>
+                                                        <td>{{ $event->event_format }}</td>
+                                                        <td>{{ $event->event_description }}</td>
+                                                        <td>{{ $event->event_img }}</td>
+                                                    </tr>
 
-                            @endforeach
+                                                    @endforeach
 
-                            </tbody>
-                          </table>
-
-
+                                            </tbody>
+                                        </table>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
       </section>
+
+
+
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio sections-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header " >
+        <h2 style="text-align: center;">EVENT IN IIUM</h2>
+        <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
+      </div>
+      <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+        <div>
+          <ul class="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">This Month</li>
+            <li data-filter=".filter-product">This Year</li>
+            <li data-filter=".filter-branding">Past</li>
+          </ul><!-- End Portfolio Filters -->
+        </div>
+        <div class="row gy-4 portfolio-container">
+
+          @foreach ($events as $index => $event)
+            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <a href="{{ asset('storage/' . $event->event_img) }}" data-gallery="portfolio-gallery-app" class="glightbox">
+                  <img src="{{ asset('storage/' . $event->event_img) }}" class="img-fluid" alt="{{ $event->event_name }}">
+                </a>
+                <div class="portfolio-info">
+                  {{-- <h4><a href="{{ route('event.details', ['id' => $event->id]) }}" title="More Details">{{ $event->event_name }}</a></h4> --}}
+                  <h4>{{ $event->event_name }}</h4>
+                  <p>{{ $event->event_description }}</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+          @endforeach
+
+        </div><!-- End Portfolio Container -->
+      </div>
+    </div>
+  </section><!-- End Portfolio Section -->
+
+
+
 
 
   @endsection
