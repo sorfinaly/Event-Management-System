@@ -22,17 +22,16 @@
             @endif
 
             @if (session()->has('error'))
-                <div class="alert alert-danger">{{$session('error')}}</div>
+                <div class="alert alert-danger">{{ session('error') }}</div>
             @endif
 
             @if (session()->has('success'))
-                <div class="alert alert-sucess">{{$session('success')}}</div>
+                <div class="alert alert-success">{{ session('success') }}</div>
             @endif
 
         </div>
       <form action="{{route('login.post')}}" method="POST">
         @csrf
->>>>>>> Stashed changes
         <img src="assets/img/iium-logo.png" alt="IIUM Logo" class="center">
         <h1>Welcome Back!</h1>
         <h6>Unlock the door and let the magic begin</h6>
@@ -53,6 +52,11 @@
         <div class="input-box">
           <input type="password" placeholder="Password" required>
 >>>>>>> Stashed changes
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="input-box">
+          <input type="password" name="password" placeholder="Password" required>
         </div>
 
         <div class="remember-forgot">

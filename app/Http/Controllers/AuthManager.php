@@ -27,9 +27,14 @@ class AuthManager extends Controller
 
         $credentials = $request->only('email','password');
         if(Auth::attempt($credentials)){
-            return redirect()->intended(route('home'));
+            $user = Auth::user();
+            session(['loginId' => $user->id]);
+            $successMessage = "Welcome back, " . $user->name . "! You have successfully logged in.";
+            // store users id as session[loginId] and route to /
+            return redirect()->intended(route('home'))->with(["success" => $successMessage]);
         }
-        return redirect(route('login'))->with("error", "Login details are not valid");  //first is key, second is message error that will be displayed
+        // route to login with error
+        return redirect(route('login'))->with("error", "Login details are not valid");
 
     }
 
@@ -46,9 +51,9 @@ class AuthManager extends Controller
 
         $user = User::create($data);
         if(!$user){
-            return redirect(route('registration'))->with("error", "Registration failed, try again.");  //first is key, second is message error that will be displayed
+            return redirect(route('registration'))->with(["error" => "Registration failed, try again."]);  //first is key, second is message error that will be displayed
         }
-        return redirect(route('login'))->with("success", "Registration success, Please login to access the website");  //first is key, second is message error that will be displayed
+        return redirect(route('login'))->with(["success" => "Registration success, Please login to access the website"]);  //first is key, second is message error that will be displayed
     }
 
     function logout(){

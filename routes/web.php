@@ -6,7 +6,14 @@ use App\Http\Controllers\EventController;
 
 
 Route::get('/', function () {
-    return view('registration');
+    // Check if the 'loginId' session variable exists
+    if (session()->has('loginId')) {
+        // User is logged in, redirect to the homepage
+        return view('homepage');
+    } else {
+        // User is not logged in, open the registration page
+        return view('registration');
+    }
 })->name('home');
 
 Route::get('/login', [AuthManager::class, 'login'])->name('login'); //pass 'login function that has created in controller
