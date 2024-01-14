@@ -2,22 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthManager;
+use App\Http\Controllers\EventController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-/**Route::get('/', function () {
-    return view('homepage');
-});
-*/
 
 Route::get('/', function () {
     // Check if the 'loginId' session variable exists
@@ -52,10 +38,6 @@ Route::get('/formcommittee', function () {
     return view('formcommittee');
 });
 
-Route::get('/events', function () {
-    return view('eventdetails');
-});
-
 Route::get('/formparticipantfee', function () {
     return view('formparticipantfee');
 });
@@ -63,3 +45,14 @@ Route::get('/formparticipantfee', function () {
 Route::get('/formparticipantfree', function () {
     return view('formparticipantfree');
 });
+
+// Route to show the form for creating a new event
+Route::get('/createevent', [EventController::class, 'create']);
+
+Route::get('/homepage', [EventController::class, 'index']);
+
+
+
+// Route to store a newly created event
+Route::post('/createevent', [EventController::class, 'store']);
+

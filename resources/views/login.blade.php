@@ -4,6 +4,11 @@
 
 <div class="wrapper">
     <div class="image">
+<<<<<<< Updated upstream
+        <img src="assets/img/login.png" alt="welcome image">
+        </div>
+    <form action="">
+=======
       <img src="assets/img/login.png" alt="welcome image">
     </div>
     <div class="form">
@@ -32,6 +37,21 @@
         <h6>Unlock the door and let the magic begin</h6>
 
         <div class="input-box">
+<<<<<<< Updated upstream
+            <input type="text" placeholder="Email" required>
+            <i class='bx bxs-envelope' ></i>
+        </div>
+
+        <div class="input-box">
+            <input type="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt'></i>
+=======
+          <input type="email" placeholder="Email" required>
+        </div>
+
+        <div class="input-box">
+          <input type="password" placeholder="Password" required>
+>>>>>>> Stashed changes
           <input type="email" name="email" placeholder="Email" required>
         </div>
 
@@ -40,20 +60,21 @@
         </div>
 
         <div class="remember-forgot">
-          <label><input type="checkbox"> Remember me</label>
-          <a href="#">Forgot password?</a>
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot password?</a>
         </div>
 
         <button type="submit" class="btn">Login</button>
 
         <div class="register-link">
+<<<<<<< Updated upstream
+        <p>Don't have an account? <a href="#">Register</a></p>
+=======
           <p>Don't have an account? <a href="registration">Register</a></p>
+>>>>>>> Stashed changes
         </div>
-      </form>
-    </div>
-  </div>
-
-
+    </form>
+</div>
 
 
 @endsection
