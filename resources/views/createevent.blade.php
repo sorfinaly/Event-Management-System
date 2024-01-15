@@ -4,12 +4,19 @@
 @extends('master.layout')
 @section('content')
 
+<style>
+    /* Custom CSS for createevent.blade.php */
 
+    /* Increase font size of labels */
+    label {
+        font-size: 15px; /* Adjust the font size as needed */
+    }
+</style>
 
 
 <div class = "background">
 
-<h2>Come Join Us!</h2>
+<h2>Let's Create Event in IIUM!</h2>
 
     <div class="form-background">
 
@@ -20,6 +27,10 @@
                     <label for="event-name">Event Name</label>
                     <input type="text" class="form-control" id="event-name" name="event_name" placeholder="Enter event name">
                 </div>
+            </div>
+
+            <div class="form-row">
+
                 <div class="form-group col-md-6">
                     <label for="priced-event">Priced Event</label>
                     <select id="priced-event" class="form-control" name="priced_event">
@@ -27,12 +38,13 @@
                         <option value="paid">Paid</option>
                     </select>
                 </div>
+                <div class="form-group col-md-6" id="fee-container" style="display: none;">
+                    <label for="fee">Fee (RM):</label>
+                    <input type="number" class="form-control" id="fee" name="fee">
+                </div>
             </div>
 
-            <div class="form-group" id="fee-container" style="display: none;">
-                <label for="fee">Fee (RM):</label>
-                <input type="number" class="form-control" id="fee" name="fee">
-            </div>
+
 
             <div class="form-row">
               <div class="form-group col-md-6">
@@ -100,15 +112,15 @@
                 <label for="event-description">Event Description</label>
                 <textarea class="form-control" id="event-description" rows="3" name='event_description'></textarea>
             </div>
-            <div class="form-group d-flex" style = "margin-bottom:40px;">
-                <div style="margin-top: 10px; display: center-align; justify-content: space-between; align-items: center; border: 4px dashed #000; padding: 50px;">
-                    <div style="padding: 50px; ">
-                        <p class="text-center">Drag and drop a image<br>
-                           Drag and drop or select an image.</p>
-                        <div style="margin-left: 120px; margin-right: auto;"><input type="file" class="form-control-file" id="receipt" name='event_img'></div>
+            <div class="form-group" style="margin-bottom: 40px; margin-top: 30px;text-align: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; border: 4px dashed #000; padding: 50px;">
+                    <div style="padding: 50px;">
+                        <p class="text-center">Drag and drop an image<br>Drag and drop or select an image.</p>
+                        <input type="file" class="form-control-file" id="img" name='event_img' style="margin-top: 10px; margin-left:100px;">
                     </div>
-                </div ">
+                </div>
             </div>
+
 
             <button type="submit" id="submit" class="btn btn-primary">Submit</button>
         </form>
