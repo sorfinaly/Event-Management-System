@@ -103,7 +103,7 @@
     <div class="container" data-aos="fade-up">
         <div class="section-header">
             <h2 style="text-align: center;">EVENT IN IIUM</h2>
-            <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
+            <p>Your one-stop platform for seamless event management. Click on specific event to join as a committee member to help shape memorable experiences or to participate in diverse events. </p>
         </div>
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
             <div>
@@ -147,9 +147,9 @@
                             </a>
                             <div class="portfolio-info">
                                 <h4 style="color:#168276">{{ $event->event_name }}</h4>
-                                <p><span style="font-weight: bold">Date:</span>{{ $eventDate->format('d-m-Y') }}</p>
-                                <p><span style="font-weight: bold">Time:</span>{{ $event->start_time }} - {{ $event->end_time }}</p>
-                                <p><span style="font-weight: bold">Pricing:</span>{{ $pricingInfo }}</p><br>
+                                <p><span style="font-weight: bold">Date: </span>{{ $eventDate->format('d-m-Y') }}</p>
+                                <p><span style="font-weight: bold">Time: </span>{{ $event->start_time }} - {{ $event->end_time }}</p>
+                                <p><span style="font-weight: bold">Pricing: </span>{{ $pricingInfo }}</p><br>
                                 <p>{{ $event->event_description }}</p>
                             </div>
                         </div>
