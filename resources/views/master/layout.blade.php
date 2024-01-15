@@ -135,7 +135,12 @@ h2{
   background-color: #192f2e; /* Darker blue on hover */
 }
 
-
+/* profile styling */
+.profile {
+    height: 50%;
+    width: 50%;
+  border-radius: 50%;
+}
 </style>
 </head>
 
