@@ -9,7 +9,7 @@
 
     /* Increase font size of labels */
     label {
-        font-size: 20px; /* Adjust the font size as needed */
+        font-size: 15px; /* Adjust the font size as needed */
     }
 </style>
 
