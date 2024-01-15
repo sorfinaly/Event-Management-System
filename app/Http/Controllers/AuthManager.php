@@ -102,4 +102,8 @@ class AuthManager extends Controller
         return view('profile', ['success' => 'Password changed successfully']);
     }
 
+    function showProfile(){
+        $user = Auth::user(); // Get the currently authenticated user
+        return view('profile', ['user' => $user]);
+    }
 }

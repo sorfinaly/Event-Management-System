@@ -10,10 +10,12 @@
             <!-- Profile Information -->
             <div class="card">
               <div class="card-body">
-                <img class="profile" src="assets/img/login.png" alt="welcome image">
+                <img class="profile" src="{{ $user->profile_photo_path ?? 'assets/img/default.png' }}" alt="Profile picture">
+
                 <h5 class="card-title">Profile Information</h5>
-                <p class="card-text">Username: JohnDoe</p>
-                <p class="card-text">Email: johndoe@example.com</p>
+                <p class="card-text">Name:{{ $user->name }}</p>
+                <p class="card-text">Email: {{ $user->email }}</p>
+                <p class="card-text">Phone: {{ $user->phone }}</p>
               </div>
             </div>
           </div>

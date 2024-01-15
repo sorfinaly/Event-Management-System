@@ -32,7 +32,7 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
-
+Route::get('/profile', [AuthManager::class, 'showProfile'])->name('profile');
 
 Route::get('/formcommittee', function () {
     return view('formcommittee');
