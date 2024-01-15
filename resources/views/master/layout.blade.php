@@ -56,6 +56,20 @@
 .form-control::placeholder {
   color: #7a6767;
 }
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 100px; /* Add some margin between form groups */
+    margin-top: 10px;
+}
+.form-control {
+    height: 60px; /* Adjust the height as needed */
+    border-color: transparent;
+}
 
 #search::placeholder{
     color: #eee2e2;
