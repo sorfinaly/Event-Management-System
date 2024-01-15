@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthManager;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\ForgetPasswordManager;
 
 Route::get('/', function () {
     if (session()->has('loginId')) {
@@ -46,3 +47,9 @@ Route::get('/createevent', [EventController::class, 'create']);
 Route::post('/createevent', [EventController::class, 'store']);
 
 Route::get('/search', [SearchController::class, 'index'])->name('search');
+
+Route::get('/forget-password', [ForgetPasswordManager::class, "forgetPassword"])->name("forget.password");
+Route::post('/forget-password', [ForgetPasswordManager::class, "forgetPassword"])->name("forget.password.post");
+
+Route::get("/reset-password/{token}", [ForgetPasswordManager::class, "resetPassword"])->name("reset.password");
+Route::post("/reset-password", [ForgetPasswordManager::class, "resetPasswordPost"])->name("reset.password.post");

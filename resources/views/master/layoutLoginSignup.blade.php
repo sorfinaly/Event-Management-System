@@ -237,6 +237,68 @@
         text-decoration: underline;
     }
 
+
+    /* style for forgot pass form */
+
+    #submit{
+    /* Right alignment */
+        text-align: right; /* Align text within the button */
+        float: right; /* Float the button to the right */
+    /* margin-right: 0px; Add some space on the right */
+
+    /* Larger size */
+    padding: 15px 30px; Increase padding for a larger button area
+    font-size: 16px; /* Increase font size for better readability */
+    }
+
+    .btn {
+        background-color: #2A6562; /* Blue */
+        color: #fff; /* White text */
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Hover effect (optional) */
+    .btn:hover {
+        background-color: #192f2e; /* Darker blue on hover */
+    }
+
+    .wrapp {
+        width: 80%;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        color: #000000;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 30px 40px;
+    }
+
+    .wrapp label{
+        margin-top: 10px;
+    }
+
+
+    .wrapp .inputs {
+        width: 100%;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid #6c757d; /* Set the border color to grey */
+
+    }
+
+    .inputs{
+        margin-top: 10px;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+
+    /* Custom styles for placeholder text */
+    .inputs::placeholder {
+    color: #6c757d; /* Placeholder text color */
+}
+
+
 </style>
 
 <body class="background">

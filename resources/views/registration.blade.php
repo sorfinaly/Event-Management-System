@@ -39,10 +39,6 @@
                         <input type="password" placeholder="Password" name="password" required>
                     </div>
 
-                    <div class="">
-                            <label class="col-6"><input type="checkbox"> Keep me logged in</label>
-                            <a class="col-6" href="#">Forgot password?</a>
-                    </div>
                     <div style="padding-bottom: 15px;padding-top: 15px;">
                         <button type="submit" class="btn" id="primaryBtn">Sign Up</button>
                     </div>
