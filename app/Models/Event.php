@@ -14,7 +14,7 @@ class Event extends Model
      * @var array
      */
     protected $fillable = [
-        'event_name', // Add any other attributes you want to be mass assignable
+        'event_name', 
         'priced_event',
         'fee',
         'event_date',
