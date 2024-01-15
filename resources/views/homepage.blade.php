@@ -34,14 +34,32 @@
 
     <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 mx-auto float-right">
         <div class="card mb-2" style="border-radius: 10em; background: linear-gradient(to right, #168276, #168276);">
-          <div class="card-body p-2">
-            <div class="input-group input-group-sm"> <input type="text" class="form-control form-control-sm rounded bg-transparent text-white" id="search" placeholder="Search Event" aria-label="Search Event" aria-describedby="basic-addon2" style="height: 45px;" /> <span class="input-group-text border-0" id="basic-addon2">
-                <button class="search" style="font-size: 18px;"> <i class="fa fa-search" style="font-size: 24px; color:#e79494"></i> </button>
-              </span>
+            <div class="card-body p-2">
+                <form  id="searchForm" action="{{ route('search') }}" method="GET">
+                    @csrf
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control form-control-sm rounded bg-transparent text-white" id="search" placeholder="Search Event" aria-label="Search Event" aria-describedby="basic-addon2" style="height: 35px;" />
+                    <span class="input-group-text border-0" id="basic-addon2">
+                        <button class="search" onclick="performSearch()" style="font-size: 15px;"> <i class="fa fa-search" style="font-size: 25px; color:#e79494"></i> </button>
+                    </span>
+                </div>
+                </form>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+
+
+    <script>
+        function performSearch() {
+            // Get the search input value
+            const searchTerm = document.getElementById('search').value;
+
+            // Perform the search logic, e.g., redirect to a search route with the search term
+            window.location.href = `/search?query=${searchTerm}`;
+        }
+    </script>
+
+
 
       <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
         <div class="overlay-mf"></div>
