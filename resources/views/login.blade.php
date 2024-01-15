@@ -29,9 +29,9 @@
         @csrf
         <img src="assets/img/iium-logo.png" alt="IIUM Logo" class="center">
         <h1>Welcome Back!</h1>
-        <h6>Unlock the door and let the magic begin</h6>
-
+        <h6>Unlock the door and let the magic begin</h6
         <div class="input-box">
+          <input type="password" placeholder="Password" required>
           <input type="email" name="email" placeholder="Email" required>
         </div>
 
@@ -40,20 +40,18 @@
         </div>
 
         <div class="remember-forgot">
-          <label><input type="checkbox"> Remember me</label>
-          <a href="#">Forgot password?</a>
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot password?</a>
         </div>
 
         <button type="submit" class="btn" id="primaryBtn">Login</button>
 
         <div class="register-link">
           <p>Don't have an account? <a href="register">Register</a></p>
+
         </div>
-      </form>
-    </div>
-  </div>
-
-
+    </form>
+</div>
 
 
 @endsection

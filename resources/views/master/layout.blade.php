@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/iium-logo.png" rel="icon">
+  <link href="assets/img/iium-logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -101,7 +101,25 @@ h2{
     padding-bottom: 20px;
 
 }
+#submit{
+  /* Right alignment */
+  text-align: right; /* Align text within the button */
+  float: right; /* Float the button to the right */
+  /* margin-right: 0px; Add some space on the right */
 
+  /* Larger size */
+  padding: 15px 30px; Increase padding for a larger button area
+  font-size: 16px; /* Increase font size for better readability */
+}
+.btn {
+  background-color: #2A6562; /* Blue */
+  color: #fff; /* White text */
+}
+
+/* Hover effect (optional) */
+.btn:hover {
+  background-color: #192f2e; /* Darker blue on hover */
+}
 
 
 </style>
@@ -109,34 +127,18 @@ h2{
 
 <body>
 
-  <!-- ======= Header ======= -->
-  {{-- <section id="topbar" class="topbar d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
-      </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section><!-- End Top Bar --> --}}
 
   <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="/" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+      <a href="/homepage" class="logo d-flex align-items-center">
+        <img src="assets/img/iium-logo.png" alt="">
         <h1>EVENT IN IIUM   <span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/events">Events</a></li>
+          <li><a href="/homepage">Home</a></li>
+          <li><a href="/createevent">Create an Event</a></li>
           <li><a href="/profile">Profile</a></li>
           <li><a href="{{ route('logout') }}">Logout</a></li>
           {{-- <li><a href="#team">Team</a></li>
@@ -158,6 +160,7 @@ h2{
             </ul>
           </li>
           <li><a href="#contact">Contact</a></li> --}}
+
         </ul>
       </nav><!-- .navbar -->
 
@@ -189,7 +192,7 @@ h2{
           <h4>Features</h4>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/events">Event Details</a></li>
+            <li><a href="#portfolio">Event Details</a></li>
             <li><a href="/profile">Profile</a></li>
           </ul>
         </div>
