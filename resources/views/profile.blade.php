@@ -1,4 +1,5 @@
 @extends('master.layout')
+@section('title','Profile')
 @section('content')
 
 <div class = "background">
