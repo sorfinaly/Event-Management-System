@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthManager;
 use App\Http\Controllers\EventController;
-
+use App\Http\Controllers\SearchController;
 
 Route::get('/', function () {
     // Check if the 'loginId' session variable exists
@@ -54,5 +54,4 @@ Route::get('/homepage', [EventController::class, 'index']);
 Route::get('/createevent', [EventController::class, 'create']);
 Route::post('/createevent', [EventController::class, 'store']);
 
-
-
+Route::get('/search', [SearchController::class, 'index'])->name('search');
