@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
+
 class AuthManager extends Controller
 {
     function ends_with_any($haystack, $needles) {
@@ -24,7 +25,6 @@ class AuthManager extends Controller
     function login(){
         return view('login');
     }
-
     function register(){
         return view('registration');
     }
@@ -80,5 +80,30 @@ class AuthManager extends Controller
         session()->forget('loginId');
         Auth::logout();
         return redirect(route('home'));
+    }
+
+    function changePassword(Request $request){
+        $validator = Validator::make($request->all(), [
+            'currentPassword' => 'required',
+            'newPassword' => 'required|confirmed',
+        ]);
+
+        $user = Auth::user();
+
+        if (!Hash::check($request->currentPassword, $user->password)) {
+            return view('profile', ['error' => 'Current password is incorrect']);
+        }
+        if ($validator->fails()) {
+            return view('profile', ['errors' => $validator->errors()]);
+        }
+        $user->password = Hash::make($request->newPassword);
+        $user->save();
+
+        return view('profile', ['success' => 'Password changed successfully']);
+    }
+
+    function showProfile(){
+        $user = Auth::user(); // Get the currently authenticated user
+        return view('profile', ['user' => $user]);
     }
 }
