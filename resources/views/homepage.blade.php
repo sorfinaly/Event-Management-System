@@ -146,11 +146,11 @@
                                 <img src="{{ asset('storage/' . $event->event_img) }}" class="img-fluid" alt="{{ $event->event_name }}">
                             </a>
                             <div class="portfolio-info">
-                                <h4>{{ $event->event_name }}</h4>
+                                <h4 style="color:#168276">{{ $event->event_name }}</h4>
+                                <p><span style="font-weight: bold">Date:</span>{{ $eventDate->format('d-m-Y') }}</p>
+                                <p><span style="font-weight: bold">Time:</span>{{ $event->start_time }} - {{ $event->end_time }}</p>
+                                <p><span style="font-weight: bold">Pricing:</span>{{ $pricingInfo }}</p><br>
                                 <p>{{ $event->event_description }}</p>
-                                <p>Date: {{ $eventDate->format('d-m-Y') }}</p>
-                                <p>Time: {{ $event->start_time }} - {{ $event->end_time }}</p>
-                                <p>Pricing: {{ $pricingInfo }}</p>
                             </div>
                         </div>
                     </div><!-- End Portfolio Item -->

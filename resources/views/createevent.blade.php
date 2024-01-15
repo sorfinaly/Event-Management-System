@@ -13,7 +13,7 @@
 
     <div class="form-background">
 
-        <form method="POST" action="/createevent" enctype="multipart/form-data">
+        <form method="post" action="/createevent" enctype="multipart/form-data">
             @csrf
             <div class="form-row">
                 <div class="form-group col-md-6">

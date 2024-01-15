@@ -46,13 +46,11 @@ Route::get('/formparticipantfree', function () {
     return view('formparticipantfree');
 });
 
-// Route to show the form for creating a new event
-Route::get('/createevent', [EventController::class, 'create']);
 
 Route::get('/homepage', [EventController::class, 'index']);
 
-
-
-// Route to store a newly created event
+Route::get('/createevent', [EventController::class, 'create']);
 Route::post('/createevent', [EventController::class, 'store']);
+
+
 
