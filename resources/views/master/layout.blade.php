@@ -67,7 +67,7 @@
     margin-top: 10px;
 }
 .form-control {
-    height: 60px; /* Adjust the height as needed */
+    height: 50px; /* Adjust the height as needed */
     border-color: transparent;
 }
 
