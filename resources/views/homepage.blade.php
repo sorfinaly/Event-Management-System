@@ -99,46 +99,6 @@
       </section>
 
 
-
-{{-- <!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio sections-bg">
-    <div class="container" data-aos="fade-up">
-      <div class="section-header " >
-        <h2 style="text-align: center;">EVENT IN IIUM</h2>
-        <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
-      </div>
-      <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
-        <div>
-          <ul class="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">This Month</li>
-            <li data-filter=".filter-product">This Year</li>
-            <li data-filter=".filter-branding">Past</li>
-          </ul><!-- End Portfolio Filters -->
-        </div>
-        <div class="row gy-4 portfolio-container">
-
-          @foreach ($events as $index => $event)
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="{{ asset('storage/' . $event->event_img) }}" data-gallery="portfolio-gallery-app" class="glightbox">
-                  <img src="{{ asset('storage/' . $event->event_img) }}" class="img-fluid" alt="{{ $event->event_name }}">
-                </a>
-                <div class="portfolio-info">
-                  {{-- <h4><a href="{{ route('event.details', ['id' => $event->id]) }}" title="More Details">{{ $event->event_name }}</a></h4> --}}
-                  {{-- <h4>{{ $event->event_name }}</h4>
-                  <p>{{ $event->event_description }}</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-          @endforeach
-
-        </div><!-- End Portfolio Container -->
-      </div>
-    </div>
-  </section><!-- End Portfolio Section -->
- --}}
-
  <section id="portfolio" class="portfolio sections-bg">
     <div class="container" data-aos="fade-up">
         <div class="section-header">
