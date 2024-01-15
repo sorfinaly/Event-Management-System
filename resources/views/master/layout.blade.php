@@ -174,7 +174,7 @@ h2{
           <h4>Features</h4>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/events">Event Details</a></li>
+            <li><a href="#portfolio">Event Details</a></li>
             <li><a href="/profile">Profile</a></li>
           </ul>
         </div>
