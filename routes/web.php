@@ -16,6 +16,8 @@ Route::get('/', function () {
     }
 })->name('home');
 
+Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
+
 Route::get('/login', [AuthManager::class, 'login'])->name('login'); //pass 'login function that has created in controller
 Route::post('/login', [AuthManager::class, 'loginPost'])->name('login.post');
 

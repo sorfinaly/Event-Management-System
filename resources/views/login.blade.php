@@ -4,11 +4,6 @@
 
 <div class="wrapper">
     <div class="image">
-<<<<<<< Updated upstream
-        <img src="assets/img/login.png" alt="welcome image">
-        </div>
-    <form action="">
-=======
       <img src="assets/img/login.png" alt="welcome image">
     </div>
     <div class="form">
@@ -34,24 +29,9 @@
         @csrf
         <img src="assets/img/iium-logo.png" alt="IIUM Logo" class="center">
         <h1>Welcome Back!</h1>
-        <h6>Unlock the door and let the magic begin</h6>
-
-        <div class="input-box">
-<<<<<<< Updated upstream
-            <input type="text" placeholder="Email" required>
-            <i class='bx bxs-envelope' ></i>
-        </div>
-
-        <div class="input-box">
-            <input type="password" placeholder="Password" required>
-            <i class='bx bxs-lock-alt'></i>
-=======
-          <input type="email" placeholder="Email" required>
-        </div>
-
+        <h6>Unlock the door and let the magic begin</h6
         <div class="input-box">
           <input type="password" placeholder="Password" required>
->>>>>>> Stashed changes
           <input type="email" name="email" placeholder="Email" required>
         </div>
 
@@ -64,14 +44,11 @@
             <a href="#">Forgot password?</a>
         </div>
 
-        <button type="submit" class="btn">Login</button>
+        <button type="submit" class="btn" id="primaryBtn">Login</button>
 
         <div class="register-link">
-<<<<<<< Updated upstream
-        <p>Don't have an account? <a href="#">Register</a></p>
-=======
-          <p>Don't have an account? <a href="registration">Register</a></p>
->>>>>>> Stashed changes
+          <p>Don't have an account? <a href="register">Register</a></p>
+
         </div>
     </form>
 </div>
