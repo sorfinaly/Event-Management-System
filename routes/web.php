@@ -9,7 +9,7 @@ Route::get('/', function () {
     // Check if the 'loginId' session variable exists
     if (session()->has('loginId')) {
         // User is logged in, redirect to the homepage
-        return view('homepage');
+        return app()->call('App\Http\Controllers\EventController@index');
     } else {
         // User is not logged in, open the registration page
         return view('registration');
@@ -50,7 +50,6 @@ Route::get('/formparticipantfree', function () {
 
 
 Route::get('/homepage', [EventController::class, 'index']);
-
 Route::get('/createevent', [EventController::class, 'create']);
 Route::post('/createevent', [EventController::class, 'store']);
 
