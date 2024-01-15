@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/iium-logo.png" rel="icon">
+  <link href="assets/img/iium-logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -132,14 +132,13 @@ h2{
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="/homepage" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/iium-logo.png" alt="">
         <h1>EVENT IN IIUM   <span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="/homepage">Home</a></li>
-          <li><a href="/createevent">Create an Events</a></li>
+          <li><a href="/createevent">Create an Event</a></li>
           <li><a href="/profile">Profile</a></li>
           <li><a href="/">Logout</a></li>
 
