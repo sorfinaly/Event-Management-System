@@ -31,7 +31,6 @@
         <h1>Welcome Back!</h1>
         <h6>Unlock the door and let the magic begin</h6>
         <div class="input-box">
-          <input type="password" placeholder="Password" required>
           <input type="email" name="email" placeholder="Email" required>
         </div>
 
