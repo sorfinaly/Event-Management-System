@@ -36,24 +36,46 @@
 
             <!-- Change Password -->
             <div class="card">
-              <div class="card-body">
+                <div class="card-body">
                 <h5 class="card-title">Change Password</h5>
-                <form>
-                  <div class="form-group">
+
+                @if (isset($success))
+                <div class="alert alert-success">
+                    {{ $success }}
+                </div>
+                 @endif
+                 @if (isset($error))
+                 <div class="alert alert-danger">
+                     {{ $error }}
+                 </div>
+                 @endif
+                @if (isset($errors) && count($errors) > 0)
+                    <div class="alert alert-danger">
+
+                            @foreach ($errors->all() as $error)
+                                {{ $error }}
+                            @endforeach
+
+                    </div>
+                @endif
+
+                <form method="POST" action="{{ route('changePassword') }}">
+                    @csrf
+                    <div class="form-group">
                     <label for="currentPassword">Current Password</label>
                     <input type="password" class="form-control" id="currentPassword" name="currentPassword" required>
-                  </div>
-                  <div class="form-group">
+                    </div>
+                    <div class="form-group">
                     <label for="newPassword">New Password</label>
                     <input type="password" class="form-control" id="newPassword" name="newPassword" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="confirmPassword">Confirm New Password</label>
-                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Change Password</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword_confirmation">Confirm New Password</label>
+                        <input type="password" class="form-control" id="newPassword_confirmation" name="newPassword_confirmation" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Change Password</button>
                 </form>
-              </div>
+                </div>
             </div>
           </div>
         </div>
