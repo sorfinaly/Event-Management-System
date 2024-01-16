@@ -5,6 +5,8 @@ use App\Http\Controllers\AuthManager;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\ForgetPasswordManager;
+use App\Http\Controllers\freeparticipantsController;
+use App\Http\Controllers\feeparticipantsController;
 
 Route::get('/', function () {
     if (session()->has('loginId')) {
