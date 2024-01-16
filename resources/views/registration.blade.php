@@ -24,27 +24,27 @@
                 <form action="{{route('registration.post')}}" method="POST" class="justify-content-center">
                     @csrf
                     <img src="assets/img/iium-logo.png" alt="IIUM Logo" class="mx-auto d-block" style="width: 50%;">
-                    <h2 class="row justify-content-center">Create Account</h2>
-                    <h5 class="row justify-content-center">Sign up now for more excitement!</h5>
+                    <h2 class="row justify-content-center" style="margin:10px;">Create Account</h2>
+                    <h5 class="row justify-content-center" style="margin:10px;">Sign up now for more excitement!</h5>
 
                     <div class="input-box">
-                        <input type="text" placeholder="Full Name" name="name" required>
+                        <input style="margin:10px;" type="text" placeholder="Full Name" name="name" required>
                     </div>
 
                     <div class="input-box">
-                        <input type="email" placeholder="Email" name="email" required>
+                        <input style="margin:10px;" type="email" placeholder="Email" name="email" required>
                     </div>
 
                     <div class="input-box">
-                        <input type="password" placeholder="Password" name="password" required>
+                        <input style="margin:10px;" type="password" placeholder="Password" name="password" required>
                     </div>
 
                     <div style="padding-bottom: 15px;padding-top: 15px;">
-                        <button type="submit" class="btn" id="primaryBtn">Sign Up</button>
+                        <button style="margin:10px;"  type="submit" class="btn" id="primaryBtn">Sign Up</button>
                     </div>
 
                     <div class="register-link">
-                    <p>Already registered? <a href="login">Login</a></p>
+                    <p style="margin:10px;" >Already registered? <a href="login">Login</a></p>
                     </div>
                 </form>
             </div>

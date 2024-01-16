@@ -3,11 +3,12 @@
 @section('content')
 
 <div class = "background">
-
+    <div class="form-background">
     <div class="container mt-5">
         <div class="row">
           <div class="col-md-4">
             <!-- Profile Information -->
+
             <div class="card">
               <div class="card-body">
                 <img class="profile" src="{{ $user->profile_photo_path ?? 'assets/img/default.png' }}" alt="Profile picture">
@@ -65,15 +66,15 @@
                     @csrf
                     <div class="form-group">
                     <label for="currentPassword">Current Password</label>
-                    <input type="password" class="form-control" id="currentPassword" name="currentPassword" required>
+                    <input style="border-style: solid; border-width:3px; border-radius:10px; border-color: #d3e4e3;" type="password" class="form-control" id="currentPassword" name="currentPassword" required>
                     </div>
                     <div class="form-group">
                     <label for="newPassword">New Password</label>
-                    <input type="password" class="form-control" id="newPassword" name="newPassword" required>
+                    <input style="border-style: solid; border-width:3px; border-radius:10px; border-color: #d3e4e3;" type="password" class="form-control" id="newPassword" name="newPassword" required>
                     </div>
                     <div class="form-group">
                         <label for="newPassword_confirmation">Confirm New Password</label>
-                        <input type="password" class="form-control" id="newPassword_confirmation" name="newPassword_confirmation" required>
+                        <input style="border-style: solid; border-width:3px; border-radius:10px; border-color: #d3e4e3;" type="password" class="form-control" id="newPassword_confirmation" name="newPassword_confirmation" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Change Password</button>
                 </form>
@@ -82,6 +83,7 @@
           </div>
         </div>
       </div>
+    </div>
 
       <!-- Bootstrap JS and Popper.js, if needed -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
