@@ -44,7 +44,7 @@
 </head>
 <style>
 
-    * {
+    *   {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -54,23 +54,46 @@
         display: inline-block;
         vertical-align: top;
         width: 40%;
+    }
 
-}
-    img {
+    /* img {
         width: auto;
         height: auto;
-        margin-left: -42%;
+        margin-left: -27%;
         object-fit: cover;
-}
+    } */
+
 
 
     .form {
         display: inline-block;
         vertical-align: top;
         width: 45%;
-        margin-left: 12%;
+        margin-left:13%;
 
-}
+    }
+
+    .imageSignUp {
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+
+    }
+
+    #regis {
+        width: 600px;
+        height: 600px;
+        margin-left: -10%;
+        object-fit: cover;
+    }
+
+
+    .formSignUp {
+        display: inline-block;
+        vertical-align: top;
+        width: 45%;
+    }
+
     .background{
         display: flex;
         justify-content: center;
@@ -78,9 +101,9 @@
         min-height:100vh;
         height: 100%;
         background: linear-gradient(90deg, #ffffff 50%, #018274 50%);
+
     }
     .wrapper {
-        text-align: center;
         width: 80%;
         border: 2px solid rgba(255, 255, 255, 0.1);
         color: #000000;
@@ -104,10 +127,20 @@
     .wrapper h1{
         font-size: 36px;
         text-align: center
+    }
 
+    .wrapper h2{
+        font-size: 30px;
+        text-align: center
     }
 
     .wrapper h6{
+        font-size: 16px;
+        text-align: center;
+
+    }
+
+    .wrapper h5{
         font-size: 16px;
         text-align: center;
 
@@ -123,25 +156,18 @@
         width: 100%;
         height: 100%;
         background: transparent;
+        background-color: rgba(231,238,238,255);
         border: none;
         outline: none;
-        border: 2px solid rgba(255, 255, 255, .2);
+        border: 2px solid rgba(255, 255, 255, 0.2);
         border-radius: 40px;
         font-size: 16px;
-        color: #ffffff;
+        color: #000000;
         padding: 20px 45px 20px 20px;
     }
 
     .input-box input::placeholder{
-        color: #ffffff;
-    }
-
-    .input-box i {
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 20px;
+        color: rgb(122, 122, 122);
     }
 
     .wrapper .remember-forgot {
@@ -155,6 +181,7 @@
         accent-color: #ffffff;
         margin-right: 3px;
     }
+
 
     .remember-forgot a {
         color: #000000;
@@ -179,6 +206,21 @@
         font-weight: 600;
     }
 
+    #primaryBtn {
+        width: 100%;
+        height: 45px;
+        background: #018274;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+
     .wrapper .register-link {
         font-size: 14.5px;
         text-align: center;
@@ -194,6 +236,68 @@
     .register-link p a:hover {
         text-decoration: underline;
     }
+
+
+    /* style for forgot pass form */
+
+    #submit{
+    /* Right alignment */
+        text-align: right; /* Align text within the button */
+        float: right; /* Float the button to the right */
+    /* margin-right: 0px; Add some space on the right */
+
+    /* Larger size */
+    padding: 15px 30px; Increase padding for a larger button area
+    font-size: 16px; /* Increase font size for better readability */
+    }
+
+    .btn {
+        background-color: #2A6562; /* Blue */
+        color: #fff; /* White text */
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Hover effect (optional) */
+    .btn:hover {
+        background-color: #192f2e; /* Darker blue on hover */
+    }
+
+    .wrapp {
+        width: 80%;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        color: #000000;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 30px 40px;
+    }
+
+    .wrapp label{
+        margin-top: 10px;
+    }
+
+
+    .wrapp .inputs {
+        width: 100%;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid #6c757d; /* Set the border color to grey */
+
+    }
+
+    .inputs{
+        margin-top: 10px;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+
+    /* Custom styles for placeholder text */
+    .inputs::placeholder {
+    color: #6c757d; /* Placeholder text color */
+}
+
 
 </style>
 
