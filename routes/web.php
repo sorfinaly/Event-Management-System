@@ -12,7 +12,7 @@ Route::get('/', function () {
     if (session()->has('loginId')) {
         return app()->call('App\Http\Controllers\EventController@index');
     } else {
-        return view('registration');
+        return view('login');
     }
 })->name('home');
 
