@@ -91,15 +91,18 @@ class AuthManager extends Controller
         $user = Auth::user();
 
         if (!Hash::check($request->currentPassword, $user->password)) {
-            return view('profile', ['error' => 'Current password is incorrect']);
+            //return view('profile', ['error' => 'Current password is incorrect']);
+            return view('profile', ['user' => $user, 'error' => 'Current password is incorrect']);
         }
         if ($validator->fails()) {
-            return view('profile', ['errors' => $validator->errors()]);
+            //return view('profile', ['errors' => $validator->errors()]);
+            return view('profile', ['user' => $user, 'errors' => $validator->errors()]);
         }
         $user->password = Hash::make($request->newPassword);
         $user->save();
 
-        return view('profile', ['success' => 'Password changed successfully']);
+        //return view('profile', ['success' => 'Password changed successfully']);
+        return view('profile', ['user' => $user, 'success' => 'Password changed successfully']);
     }
 
     function showProfile(){

@@ -29,10 +29,12 @@ Route::get('/formparticipantfree', function () {
     return view('formparticipantfree');
 });
 
-Route::get('/profile', function () {
-    return view('profile');
-});
+// Remove this route
+// Route::get('/profile', function () {
+//     return view('profile');
+// });
 
+// Keep this route
 Route::get('/profile', [AuthManager::class, 'showProfile'])->name('profile');
 
 Route::get('/formcommittee', function () {
