@@ -26,14 +26,12 @@
             @csrf
             <p>We will send a link to your email, use that to reset password.</p>
             <input type="text" name="token" hidden value="{{$token}}">
-            <label for="email">Email address</label>
-            <input type="email" class="inputs" id="email" name="email" placeholder="Enter your email" required>
 
             <label for="password">New Password</label>
-            <input type="password" class="inputs" id="password" name="newpass" placeholder="Enter new password" required>
+            <input type="password" class="inputs" id="password" name="password" placeholder="Enter new password" required>
 
             <label for="password">Confirm Pasword</label>
-            <input type="password" class="inputs" id="password" name="confirmpass" placeholder="Confirm your password" required>
+            <input type="password" class="inputs" id="password" name="password_confirmation" placeholder="Confirm your password" required>
 
             <button type="submit" class="btn btn-primary btn-block">Reset Password</button>
 

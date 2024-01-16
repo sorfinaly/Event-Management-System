@@ -69,7 +69,7 @@ Route::post('/createevent', [EventController::class, 'store']);
 Route::get('/search', [SearchController::class, 'index'])->name('search');
 
 Route::get('/forget-password', [ForgetPasswordManager::class, "forgetPassword"])->name("forget.password");
-Route::post('/forget-password', [ForgetPasswordManager::class, "forgetPassword"])->name("forget.password.post");
+Route::post('/forget-password', [ForgetPasswordManager::class, "forgetPasswordPost"])->name("forget.password.post");
 
 Route::get("/reset-password/{token}", [ForgetPasswordManager::class, "resetPassword"])->name("reset.password");
 Route::post("/reset-password", [ForgetPasswordManager::class, "resetPasswordPost"])->name("reset.password.post");

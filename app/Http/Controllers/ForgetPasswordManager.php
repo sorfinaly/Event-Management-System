@@ -23,7 +23,7 @@ class ForgetPasswordManager extends Controller
 
         $token = Str::random(64);
 
-        DB:table('password_resets')->insert([
+        DB::table('password_reset_tokens')->insert([
             'email' => $request ->email,
             'token' =>$token,
             'created_at' => Carbon::now()
@@ -44,15 +44,12 @@ class ForgetPasswordManager extends Controller
 
     function resetPasswordPost(Request $request){
         $request ->validate([
-            'email' => "required|email|exists:users",
+            'token' => "required|exists:password_reset_tokens",
             'password' => "required|string|min:6|confirmed",
             'password_confirmation' => "required"
         ]);
 
-
-
-        $updatePassword = DB::table('password_resets')->where([
-            "email"=>$request->email,
+        $updatePassword = DB::table('password_reset_tokens')->where([
             "token"=>$request->token
         ])->first();
 
@@ -60,14 +57,13 @@ class ForgetPasswordManager extends Controller
             return redirect()->to(route("reset.password"))->with("error", "Invalid");
         }
 
-        User::where("email",$request->email)->update(["password" => Hash::make($request->password)]);
+        User::where("email",$updatePassword->email)->update(["password" => Hash::make($request->password)]);
 
-        DB::table('password_resets')->where([
-            "email"=>$request->email])->delete();
-
+        DB::table('password_reset_tokens')->where([
+            "email"=>$updatePassword->email])->delete();
 
         return redirect()->to(route("login"))->with("success", "Password reset success");
-
     }
+
 
 }
