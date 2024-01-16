@@ -44,107 +44,266 @@
   ======================================================== -->
 
 <style>
-.intro {
-  height: 100%;
-}
-.form-control {
-  border-color: transparent;
-}
+    .intro {
+        height: 100%;
+    }
+    .form-control {
+        border-color: transparent;
+    }
 
-.input-group>.form-control:focus {
-  border-color: transparent;
-  box-shadow: inset 0 0 0 1px transparent;
-}
-
-
-.form-control::placeholder {
-  color: #7a6767;
-}
-.form-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.form-group {
-    flex: 1;
-    margin-right: 100px; /* Add some margin between form groups */
-    margin-top: 10px;
-}
-.form-control {
-    height: 50px; /* Adjust the height as needed */
-    border-color: transparent;
-}
-
-#search::placeholder{
-    color: #eee2e2;
-}
-
-.search{
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-}
+    .input-group>.form-control:focus {
+        border-color: transparent;
+        box-shadow: inset 0 0 0 1px transparent;
+    }
 
 
-#basic-addon2{
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-}
+    .form-control::placeholder {
+        color: #7a6767;
+    }
 
-.form-background {
-  background-color: #d3e4e3; /* Adjust background color as needed */
-  border-radius: 20px; /* Adjust border radius for curvature */
-  padding: 70px; /* Add padding for spacing */
-  margin: 70px; /* Add margin for spacing */
-  margin-top: 20px;
-}
+    .form-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.background{
-    padding: 10px; /* Add padding for spacing */
-    margin-top: 150px;
-}
+    .form-group {
+        flex: 1;
+        margin-right: 100px; /* Add some margin between form groups */
+        margin-top: 10px;
+    }
+    .form-control {
+        height: 50px; /* Adjust the height as needed */
+        border-color: transparent;
+    }
 
-h2{
-    color: #585555;
-    font-weight: 700;
-    text-align: left;
-    padding-left:80px;
-    padding-bottom: 20px;
+    #search::placeholder{
+        color: #eee2e2;
+    }
 
-}
-#submit{
-  /* Right alignment */
-  text-align: right; /* Align text within the button */
-  float: right; /* Float the button to the right */
-  /* margin-right: 0px; Add some space on the right */
+    .search{
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+    }
 
-  /* Larger size */
-  padding: 15px 30px; Increase padding for a larger button area
-  font-size: 16px; /* Increase font size for better readability */
-}
-.btn {
-  background-color: #2A6562; /* Blue */
-  color: #fff; /* White text */
-}
 
-/* Hover effect (optional) */
-.btn:hover {
-  background-color: #192f2e; /* Darker blue on hover */
-}
+    #basic-addon2{
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+    }
 
-/* profile styling */
-.profile {
-    height: 50%;
-    width: 50%;
-  border-radius: 50%;
-}
+    .form-background {
+        background-color: #d3e4e3; /* Adjust background color as needed */
+        border-radius: 20px; /* Adjust border radius for curvature */
+        padding: 70px; /* Add padding for spacing */
+        margin: 70px; /* Add margin for spacing */
+        margin-top: 20px;
+    }
+
+    .background{
+        padding: 10px; /* Add padding for spacing */
+        margin-top: 150px;
+    }
+
+    h2{
+        color: #585555;
+        font-weight: 700;
+        text-align: left;
+        padding-left:80px;
+        padding-bottom: 20px;
+
+    }
+    #submit{
+        /* Right alignment */
+        text-align: right; /* Align text within the button */
+        float: right; /* Float the button to the right */
+        /* margin-right: 0px; Add some space on the right */
+
+        /* Larger size */
+        padding: 15px 30px; Increase padding for a larger button area
+        font-size: 16px; /* Increase font size for better readability */
+    }
+
+    .btn {
+        background-color: #2A6562; /* Blue */
+        color: #fff; /* White text */
+    }
+
+    /* Hover effect (optional) */
+        .btn:hover {
+        background-color: #192f2e; /* Darker blue on hover */
+    }
+
+
+
+
+    /* profile styling */
+
+    .card-body h5{
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .texts {
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .profile {
+        height: 50%;
+        width: 50%;
+        border-radius: 50%;
+    }
+
+     /* Custom styles for placeholder text */
+     .form-control::placeholder {
+            color: #6c757d;
+        }
+
+        /* Curved input */
+        .form-control {
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* Grey placeholder line */
+        .form-control {
+            border: 1px solid #6c757d;
+        }
+
+        /* Profile picture styling */
+        .profile-pic {
+            border-radius: 50%;
+            height: 400px;
+            width: 400px;
+            margin-right: 40px;
+        }
+
+        /* Additional information styling */
+        .profile-info {
+            margin-top: 20px;
+        }
+
+        /* Center the card title */
+        .card-title {
+            text-align: center;
+        }
+
+
+        .button-delete {
+            background-image: linear-gradient(#ec4245, #c90000);
+            border: 1px solid red;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            direction: ltr;
+            display: block;
+            font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: -.022em;
+            line-height: 1.47059;
+            min-width: 30px;
+            overflow: visible;
+            padding: 4px 15px;
+            text-align: center;
+            vertical-align: baseline;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            float: right;
+        }
+
+        .button-delete:disabled {
+            cursor: default;
+            opacity: .3;
+        }
+
+        .button-delete:hover {
+            background-image: linear-gradient(#ec4245, #c90000);
+            border-color: maroon;
+            text-decoration: none;
+        }
+
+        .button-delete:active {
+            background-image: linear-gradient(#ec4245, #c90000);
+            border-color: red;
+            outline: none;
+        }
+
+        .button-delete:focus {
+            box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+            outline: none;
+        }
+
+        .info {
+            margin-left: 30px;
+            width: 100%;
+        }
+
+
+
+        .button-profileupdate {
+            background-image: linear-gradient(#4fc3b6, #018274);
+            width: 200px;
+            border: 1px solid #018274;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            direction: ltr;
+            display: block;
+            font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: -.022em;
+            line-height: 1.47059;
+            overflow: visible;
+            padding: 4px 15px;
+            text-align: center;
+            vertical-align: baseline;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            margin-right:0%;
+            float: right;
+        }
+
+        .button-profileupdate:disabled {
+            cursor: default;
+            opacity: .3;
+        }
+
+        .button-profileupdate:hover {
+            background-image: linear-gradient(#4fc3b6, #018274);
+            border-color: #03b5a0;
+            text-decoration: none;
+        }
+
+        .button-profileupdate:active {
+            background-image: linear-gradient(#4fc3b6, #018274);
+            border-color: #018274;
+            outline: none;
+        }
+
+        .button-profileupdate:focus {
+            box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+            outline: none;
+        }
+
+        .alignment {
+            margin-left: 100px;
+        }
 </style>
 </head>
 

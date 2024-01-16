@@ -25,6 +25,10 @@ Route::post('/register', [AuthManager::class, 'registrationPost'])->name('regist
 Route::get('/change-password', [AuthManager::class, 'changePassword'])->name('changePassword');
 Route::post('/change-password', [AuthManager::class, 'changePassword'])->name('changePassword');
 
+
+Route::get('/change-profile', [AuthManager::class, 'changeProfile'])->name('changeProfile');
+Route::post('/change-profile', [AuthManager::class, 'changeProfile'])->name('changeProfile');
+
 Route::get('/formparticipantfree', function () {
     return view('formparticipantfree');
 });

@@ -109,4 +109,24 @@ class AuthManager extends Controller
         $user = Auth::user(); // Get the currently authenticated user
         return view('profile', ['user' => $user]);
     }
+
+    function changeProfile(){
+        $validator = Validator::make($request->all(), [
+            'currentName' => 'required',
+            'currentEmail' => 'required',
+            'currentPhone' => 'filled',
+        ]);
+
+        $user = Auth::user();
+
+        if ($validator->fails()) {
+            //return view('profile', ['errors' => $validator->errors()]);
+            return view('profile', ['user' => $user, 'errors' => $validator->errors()]);
+        }
+
+        $user->save();
+
+        //return view('profile', ['success' => 'Password changed successfully']);
+        return view('profile', ['user' => $user, 'success' => 'Profile Updated']);
+    }
 }
