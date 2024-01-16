@@ -46,6 +46,22 @@ Route::get('/formparticipantfee', function () {
     return view('formparticipantfee');
 });
 
+Route::get('/feeparticipantslist', function () {
+    return view('feeparticipantslist');
+});
+
 Route::get('/formparticipantfree', function () {
     return view('formparticipantfree');
 });
+
+Route::get('/freeparticipantslist', function () {
+    return view('freeparticipantslist');
+});
+
+Route::get('/freeparticipantslist',[freeparticipantsController::class,'index']);
+
+Route::resource('addfreeparticipant', freeparticipantsController::class);
+
+Route::get('/feeparticipantslist',[feeparticipantsController::class,'index']);
+
+Route::resource('addfeeparticipant', feeparticipantsController::class);
