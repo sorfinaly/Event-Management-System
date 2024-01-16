@@ -197,7 +197,7 @@
         }
 
 
-        .button-delete {
+        /* .button-delete {
             background-image: linear-gradient(#ec4245, #c90000);
             border: 1px solid red;
             border-radius: 4px;
@@ -243,7 +243,7 @@
         .button-delete:focus {
             box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
             outline: none;
-        }
+        } */
 
         .info {
             margin-left: 30px;
@@ -252,7 +252,7 @@
 
 
 
-        .button-profileupdate {
+        /* .button-profileupdate {
             background-image: linear-gradient(#4fc3b6, #018274);
             width: 200px;
             border: 1px solid #018274;
@@ -299,11 +299,82 @@
         .button-profileupdate:focus {
             box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
             outline: none;
-        }
+        } */
 
         .alignment {
             margin-left: 100px;
         }
+
+
+        .button-profileupdate {
+            background-color: #018274;
+            border: 1px solid #018274;
+            border-radius: 6px;
+            box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            outline: none;
+            outline: 0;
+            padding: 10px 25px;
+            text-align: center;
+            transform: translateY(0);
+            transition: transform 150ms, box-shadow 150ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            float: right;
+        }
+
+        .button-profileupdate:hover {
+            box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+            transform: translateY(-2px);
+        }
+
+        @media (min-width: 768px) {
+        .button-profileupdate {
+            padding: 10px 30px;
+        }
+        }
+
+
+        .button-delete {
+            background-color: maroon;
+            border: 1px solid maroon;
+            border-radius: 4px;
+            box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            outline: none;
+            outline: 0;
+            padding: 10px 25px;
+            text-align: center;
+            transform: translateY(0);
+            transition: transform 150ms, box-shadow 150ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            float: right;
+        }
+
+        .button-delete:hover {
+            box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+            transform: translateY(-2px);
+        }
+
+        @media (min-width: 768px) {
+        .button-delete {
+            padding: 10px 30px;
+        }
+        }
+
 </style>
 </head>
 
