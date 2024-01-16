@@ -1,57 +1,60 @@
-@extends('master.layoutLoginSignUp')
+@extends('master.layoutLoginSignup')
 @section('title','Sign Up')
 @section('content')
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-6 d-flex align-items-center">
-            <div class="row center">
-                @if ($errors->any())
-                    <div class="col-12">
-                        @foreach ($errors->all() as $error)
-                            <div class="alert alert-danger">{{$error}}</div>
-                        @endforeach
-                    </div>
-                @endif
+<div class="wrapper">
+    <div class="formS">
 
-                @if (session()->has('error'))
-                    <div class="alert alert-danger">{{$session('error')}}</div>
-                @endif
+        <div class="mt-5">
+            @if ($errors->any())
+                <div class="col-12">
+                   @foreach ($errors->all() as $error)
+                        <div class="alert alert-danger">{{$error}}</div>
+                    @endforeach
+                </div>
+            @endif
 
-                @if (session()->has('success'))
-                    <div class="alert alert-sucess">{{$session('success')}}</div>
-                @endif
-                <form action="{{route('registration.post')}}" method="POST" class="justify-content-center">
-                    @csrf
-                    <img src="assets/img/iium-logo.png" alt="IIUM Logo" class="mx-auto d-block" style="width: 50%;">
-                    <h2 class="row justify-content-center" style="margin:10px;">Create Account</h2>
-                    <h5 class="row justify-content-center" style="margin:10px;">Sign up now for more excitement!</h5>
+            @if (session()->has('error'))
+                <div class="alert alert-danger">{{$session('error')}}</div>
+            @endif
 
-                    <div class="input-box">
-                        <input style="margin:10px;" type="text" placeholder="Full Name" name="name" required>
-                    </div>
+            @if (session()->has('success'))
+                <div class="alert alert-sucess">{{$session('success')}}</div>
+            @endif
 
-                    <div class="input-box">
-                        <input style="margin:10px;" type="email" placeholder="Email" name="email" required>
-                    </div>
+        </div>
 
-                    <div class="input-box">
-                        <input style="margin:10px;" type="password" placeholder="Password" name="password" required>
-                    </div>
 
-                    <div style="padding-bottom: 15px;padding-top: 15px;">
-                        <button style="margin:10px;"  type="submit" class="btn" id="primaryBtn">Sign Up</button>
-                    </div>
+        <form action="{{route('registration.post')}}" method="POST">
+            @csrf
+            <img src="assets/img/iium-logo.png" alt="IIUM Logo" class="center">
+            <h2>Create Account</h2>
+            <h6>Sign up now for more excitement!</h6>
 
-                    <div class="register-link">
-                    <p style="margin:10px;" >Already registered? <a href="login">Login</a></p>
-                    </div>
-                </form>
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" name="name" required>
             </div>
-        </div>
-        <div class="col-6 d-flex align-items-center">
-            <img src="assets/img/registration.png" style="width: 100%;" alt="welcome image" class="mx-auto d-block">
-        </div>
+
+            <div class="input-box">
+                <input type="email" placeholder="Email" name="email" required>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password" name="password" required>
+            </div>
+
+            <button type="submit" class="btn" id="primaryBtn">Sign Up</button>
+
+
+            <div class="register-link">
+                <p>Already registered? <a href="login">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="imageReg">
+        <img src="assets/img/registration.png" alt="welcome image">
+    </div>
     </div>
 </div>
 

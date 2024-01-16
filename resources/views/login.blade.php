@@ -25,10 +25,11 @@
             @endif
 
         </div>
+
       <form action="{{route('login.post')}}" method="POST">
         @csrf
         <img src="assets/img/iium-logo.png" alt="IIUM Logo" class="center">
-        <h1>Welcome Back!</h1>
+        <h2>Welcome Back</h2>
         <h6>Unlock the door and let the magic begin</h6>
         <div class="input-box">
           <input type="email" name="email" placeholder="Email" required>
@@ -49,7 +50,6 @@
 
         <div class="register-link">
           <p>Don't have an account? <a href="register">Register</a></p>
-
         </div>
     </form>
 </div>

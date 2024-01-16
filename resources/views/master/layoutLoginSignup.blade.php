@@ -50,88 +50,43 @@
         box-sizing: border-box;
         font-family: "Poppins", sans-serif;
     }
-    .image {
-        display: inline-block;
-        vertical-align: top;
-        width: 40%;
+
+    body {
+        overflow: hidden; /* Prevent scrolling */
     }
 
-    /* img {
-        width: auto;
-        height: auto;
-        margin-left: -27%;
-        object-fit: cover;
-    } */
-
-
-
-    .form {
-        display: inline-block;
-        vertical-align: top;
-        width: 45%;
-        margin-left:13%;
-
-    }
-
-    .imageSignUp {
-        display: inline-block;
-        vertical-align: top;
-        width: 40%;
-
-    }
-
-    #regis {
-        width: 600px;
-        height: 600px;
-        margin-left: -10%;
-        object-fit: cover;
-    }
-
-
-    .formSignUp {
-        display: inline-block;
-        vertical-align: top;
-        width: 45%;
-    }
-
+    /* for bothh */
     .background{
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height:100vh;
-        height: 100%;
+        height:100vh; /* Use viewport height to fill the entire screen */
+        margin:0; /* Remove default margin */
         background: linear-gradient(90deg, #ffffff 50%, #018274 50%);
 
     }
+
     .wrapper {
         width: 80%;
+        max-width: 800px; /* Set a maximum width for better responsiveness */
         border: 2px solid rgba(255, 255, 255, 0.1);
         color: #000000;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         padding: 30px 40px;
-    }
-
-    .wrapper .image {
-
+        box-sizing: border-box; /* Include padding and border in width calculation */
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .center {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
-        height: 50%;
-    }
-
-    .wrapper h1{
-        font-size: 36px;
-        text-align: center
-    }
-
-    .wrapper h2{
-        font-size: 30px;
-        text-align: center
+        width: 100px;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
     }
 
     .wrapper h6{
@@ -140,16 +95,17 @@
 
     }
 
-    .wrapper h5{
-        font-size: 16px;
+    .wrapper h2{
+        font-size: 30px;
         text-align: center;
-
+        margin-top: center;
     }
+
 
     .wrapper .input-box {
         width: 100%;
         height: 50px;
-        margin: 30px 0;
+        margin: 20px 0;
     }
 
     .input-box input {
@@ -168,6 +124,62 @@
 
     .input-box input::placeholder{
         color: rgb(122, 122, 122);
+    }
+
+    .wrapper .btn {
+        width: 100%;
+        height: 45px;
+        background: #018274;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .wrapper .register-link {
+        font-size: 14.5px;
+        text-align: center;
+        margin: 20px 0 15px;
+    }
+
+    .register-link p a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .register-link p a:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+
+
+    /* style for login */
+    .image {
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+        margin-left:-14%;
+        margin-right: 14%;
+        margin-top: 65px;
+    }
+
+
+    .form {
+        display: inline-block;
+        vertical-align: top;
+        width: 45%;
+        margin-left:13%;
+        align-items: center;
+        justify-content: center;
+        max-width: none; /* Remove maximum width */
     }
 
     .wrapper .remember-forgot {
@@ -192,50 +204,36 @@
         text-decoration: underline;
     }
 
-    .wrapper .btn {
-        width: 100%;
-        height: 45px;
-        background: #018274;
-        border: none;
-        outline: none;
-        border-radius: 40px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        font-size: 16px;
-        color: #ffffff;
-        font-weight: 600;
-    }
 
-    #primaryBtn {
-        width: 100%;
-        height: 45px;
-        background: #018274;
-        border: none;
-        outline: none;
-        border-radius: 40px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        font-size: 16px;
-        color: #ffffff;
-        font-weight: 600;
+
+
+    /* style for register */
+    .formS {
+        display: inline-block;
+        vertical-align: top;
+        width: 45%;
+        margin-left:5px;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        max-width: none; /* Remove maximum width */
     }
 
 
-    .wrapper .register-link {
-        font-size: 14.5px;
-        text-align: center;
-        margin: 20px 0 15px;
+    .imageReg {
+        display: inline-block;
+        vertical-align: top;
+        width: 100px;
+        height: 100px;
+        margin-left:14%;
+        margin-right: 14%;
+        margin-top: 20px;
     }
 
-    .register-link p a {
-        color: #000000;
-        text-decoration: none;
-        font-weight: 600;
-    }
 
-    .register-link p a:hover {
-        text-decoration: underline;
-    }
+
+
+
 
 
     /* style for forgot pass form */
