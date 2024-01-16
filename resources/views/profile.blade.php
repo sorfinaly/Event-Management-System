@@ -44,6 +44,8 @@
 
                                     <form method="POST" action="{{ route('changeProfile') }}">
                                         @csrf
+
+                                        @method('put')
                                         <input type="text" class="form-control" id="currentName" name="currentName" value="{{$user->name}}">
                                         <input type="text" class="form-control" id="currentEmail" name="currentEmail" value="{{$user->email}}">
                                         <input type="text" class="form-control" id="currentPhone" name="currentPhone" placeholder="Place Your Phone Number Here" value="{{$user->phone}}">
