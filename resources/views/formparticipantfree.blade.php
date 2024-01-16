@@ -3,29 +3,31 @@
 
 <div class = "background">
 
-<h2>Come Join Us!</h2>
+    <h2>Come Join Us!</h2>
 
     <div class="form-background">
 
-        <form style= "padding-bottom: 50px">
+        <form action="addfreeparticipant" method="post" style= "padding-bottom: 50px" role="form" enctype="multipart/form-data">
+        @csrf
             <div class="form-group d-flex justify-content-between mb-3">
-            <label for="exampleFormControlInput1" class="w-25 font-weight-bold form-control-lg">Email address</label>
-            <input type="email" class="form-control " id="exampleFormControlInput1" placeholder="Enter your email address">
+                <label for="matric_id" class="w-25 font-weight-bold form-control-lg">Matric ID :</label>
+                <input type="text" name="matric_id" class="form-control" id="matric_id" placeholder="Enter your matric ID" required>
             </div>
 
             <div class="form-group d-flex justify-content-between mb-3">
-                <label for="matricId" class="w-25 font-weight-bold form-control-lg">Matric ID</label>
-                <input type="number" class="form-control" id="matricId" placeholder="Enter your matric ID">
+                <label for="full_name" class="w-25 font-weight-bold form-control-lg">Full Name :</label>
+                <input type="text" name="full_name" class="form-control" id="full_name" placeholder="Enter your full name" required>
             </div>
 
             <div class="form-group d-flex justify-content-between mb-3">
-                <label for="fullName" class="w-25 font-weight-bold form-control-lg">Full name</label>
-                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                <label for="email" class="w-25 font-weight-bold form-control-lg">Email :</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
             </div>
 
             <div class="form-group d-flex justify-content-between mb-3">
-                <label for="kulliyyah" class="w-25 font-weight-bold form-control-lg">Kulliyyah :</label>
-                <select class="form-control " id="kulliyyah">
+                <label for="kuliyyah" class="w-25 font-weight-bold form-control-lg">Kuliyyah :</label>
+                <select type="text" name="kuliyyah" class="form-select" id="kuliyyah" required>
+                    <option value="" disabled selected>Select your kuliyyah</option>
                     <option>KOED</option>
                     <option>KICT</option>
                     <option>KOE</option>
@@ -40,40 +42,24 @@
                     <option>KON</option>
                     <option>KIRKHS</option>
                 </select>
-                </div>
-
-            <div class="form-group d-flex justify-content-between mb-3">
-                <label for="phoneNo" class="w-25 font-weight-bold form-control-lg">Phone number</label>
-                <input type="tel" class="form-control" id="phoneNo" placeholder="Enter your phone number">
             </div>
 
+            <div class="form-group d-flex justify-content-between mb-3">
+                <label for="phone_no" class="w-25 font-weight-bold form-control-lg">Phone No :</label>
+                <input type="text" name="phone_no" class="form-control" id="phone_no" placeholder="Enter your phone number" required>
+            </div>
 
+            <div class="d-flex justify-content-between align-items-center pb-4">
+                <button onclick="window.location.href='/freeparticipantslist'"class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
+                    <i class="bi bi-arrow-left me-2"></i> Back
+                </button>
 
-
-            {{-- </div> #use for event details
-            <div class="form-group d-flex justify-content-between form-control-lg">
-            <label for="exampleFormControlTextarea1" class="w-25 font-weight-bold">Example textarea</label>
-            <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div> --}}
+                <button type="submit" onclick="window.location.href='/formparticipantfree'" class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
+                    Submit <i class="bi bi-check me-2"></i>
+                </button>
+            </div>
         </form>
-
-
-        <div class="d-flex justify-content-between align-items-center pb-4">
-            <button class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
-              <i class="bi bi-arrow-left me-2"></i> Back
-            </button>
-            <form>
-              </form>
-            <button class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
-              Submit <i class="bi bi-check me-2"></i>
-            </button>
-          </div>
-
-
-
-
-     </div>
+    </div>
 </div>
 
 @endsection
-
