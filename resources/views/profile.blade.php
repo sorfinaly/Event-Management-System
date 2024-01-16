@@ -101,10 +101,10 @@
                 <!-- Delete Account -->
                 <div class="card mb-4">
                     <div class="card-body d-flex flex-column">
+                        <form action="{{route('delete.account.confirm')}}">
                         <h5 class="card-title text-left">Delete Account</h5>
                         <p class="card-text">Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.</p>
-                        <form>
-                            <button type="submit" class="button-delete text-right">DELETE ACCOUNT</button>
+                        <button type="submit" class="button-delete text-right">DELETE ACCOUNT</button>
                         </form>
                     </div>
                 </div>

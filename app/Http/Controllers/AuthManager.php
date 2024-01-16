@@ -35,16 +35,21 @@ class AuthManager extends Controller
             'password' => 'required'
         ]);
 
+
         $credentials = $request->only('email','password');
-        if(Auth::attempt($credentials)){
+        $remember = $request->has('remember');
+
+
+        if (Auth::attempt($credentials, $remember)) {
             $user = Auth::user();
             session(['loginId' => $user->id]);
             $successMessage = "Welcome back, " . $user->name . "! You have successfully logged in.";
-            // store users id as session[loginId] and route to /
+
             return redirect()->intended(route('home'))->with(["success" => $successMessage]);
         }
-        // route to login with error
+
         return redirect(route('login'))->with("error", "Login details are not valid");
+
 
     }
 

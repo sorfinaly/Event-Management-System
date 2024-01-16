@@ -7,6 +7,7 @@ use App\Http\Controllers\SearchController;
 use App\Http\Controllers\ForgetPasswordManager;
 use App\Http\Controllers\freeparticipantsController;
 use App\Http\Controllers\feeparticipantsController;
+use App\Http\Controllers\DeleteAccountManager;
 
 Route::get('/', function () {
     if (session()->has('loginId')) {
@@ -79,3 +80,7 @@ Route::post('/forget-password', [ForgetPasswordManager::class, "forgetPasswordPo
 
 Route::get("/reset-password/{token}", [ForgetPasswordManager::class, "resetPassword"])->name("reset.password");
 Route::post("/reset-password", [ForgetPasswordManager::class, "resetPasswordPost"])->name("reset.password.post");
+
+
+Route::get('/delete-account', [DeleteAccountManager::class, "confirmDelete"])->name("delete.account.confirm");
+Route::delete('/delete-account', [DeleteAccountManager::class,'delete'])->name('delete.account');

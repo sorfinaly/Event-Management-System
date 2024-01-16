@@ -39,7 +39,9 @@
         </div>
 
         <div class="remember-forgot">
-            <label><input type="checkbox"> Remember me</label>
+
+            <!-- Add the 'checked' attribute if the user previously checked the 'Remember Me' checkbox -->
+            <label><input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember me</label>
             <a href="{{route("forget.password")}}">Forgot password?</a>
         </div>
 
