@@ -14,10 +14,12 @@
 
                             <!-- User Profile Info -->
                             <div class="d-flex flex-column align-items-center text-center md-5">
-                                <img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+                                <img class="rounded-circle mt-5" width="150px" src="{{ asset($user->profile_photo_path) ?? 'mahito.png' }}">
+
                                 <span class="font-weight-bold">{{ $user->role }}</span>
+                                <form method="POST" action="{{ route('changeProfile') }}" enctype="multipart/form-data">
                                 <!-- Add the file input here -->
-                                <span><input type="file" name="profile_picture" id="profile_picture" class = "alignment"></span>
+                                <span><input type="file" name="profile_photo" id="profile_photo" class = "alignment"></span>
                             </div>
 
                             <!-- Profile Settings -->
@@ -42,7 +44,7 @@
                                         </div>
                                     @endif
 
-                                    <form method="POST" action="{{ route('changeProfile') }}">
+
                                         @csrf
                                         <input type="text" class="form-control" id="currentName" name="currentName" value="{{$user->name}}">
                                         <input type="text" class="form-control" id="currentEmail" name="currentEmail" value="{{$user->email}}">

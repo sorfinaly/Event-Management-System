@@ -9,8 +9,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-
-
+use Illuminate\Support\Facades\Storage;
 class AuthManager extends Controller
 {
     function ends_with_any($haystack, $needles) {
@@ -117,6 +116,7 @@ class AuthManager extends Controller
             'currentName' => 'required',
             'currentEmail' => 'required',
             'currentPhone' => 'filled',
+            'profile_picture' => 'image|max:2048', // Validate the profile picture
         ]);
 
         $user = Auth::user();
@@ -125,7 +125,19 @@ class AuthManager extends Controller
             return view('profile', ['user' => $user, 'profileErrors' => $validator->errors()]);
         }
 
-        // Update the user's data
+        // Handle the profile picture upload
+        if ($request->hasFile('profile_photo')) {
+            // Delete the old picture
+            if ($user->profile_photo_path) {
+                unlink(public_path($user->profile_photo_path));
+            }
+
+            // Store the new picture and update the user model
+            $path = $request->file('profile_photo')->store('profile_photo', 'public');
+            $user->profile_photo_path = 'storage/' . $path;
+        }
+
+
         $user->name = $request->currentName;
         $user->email = $request->currentEmail;
         $user->phone = $request->currentPhone;
@@ -134,5 +146,6 @@ class AuthManager extends Controller
 
         return view('profile', ['user' => $user, 'profileSuccess' => 'Profile Updated']);
     }
+
 
 }
