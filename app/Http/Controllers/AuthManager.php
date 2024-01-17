@@ -116,7 +116,7 @@ class AuthManager extends Controller
             'currentName' => 'required',
             'currentEmail' => 'required',
             'currentPhone' => 'filled',
-            'profile_picture' => 'image|max:2048', // Validate the profile picture
+            'profile_photo' => 'image|max:2048', // Validate the profile picture
         ]);
 
         $user = Auth::user();

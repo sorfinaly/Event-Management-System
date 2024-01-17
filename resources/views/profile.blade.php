@@ -19,7 +19,7 @@
                                 <form method="POST" action="{{ route('changeProfile') }}" enctype="multipart/form-data">
                                     <!-- Add the file input here -->
                                     <span class="file-input"><input type="file" name="profile_photo" id="profile_photo" class="alignment"></span>
-                                </form>
+
                             </div>
 
                             <!-- Profile Settings -->
