@@ -168,7 +168,6 @@
                                 <p><span style="font-weight: bold">Date: </span>{{ $eventDate->format('d-m-Y') }}</p>
                                 <p><span style="font-weight: bold">Time: </span>{{ $event->start_time }} - {{ $event->end_time }}</p>
                                 <p><span style="font-weight: bold">Pricing: </span>{{ $pricingInfo }}</p><br>
-                                <p>{{ $event->event_description }}</p>
                             </div>
                         </div>
                     </div><!-- End Portfolio Item -->
