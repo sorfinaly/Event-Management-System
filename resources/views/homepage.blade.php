@@ -31,7 +31,7 @@
   <!-- End Hero Section -->
 
   <main id="main">
-{{-- 
+{{--
     <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 mx-auto float-right">
         <div class="card mb-2" style="border-radius: 10em; background: linear-gradient(to right, #168276, #168276);">
             <div class="card-body p-2">
@@ -129,7 +129,7 @@
                 <ul class="portfolio-flters">
                     <li data-filter="*" class="filter-active">All</li>
                     <li data-filter=".filter-this-month">This Month</li>
-                    <li data-filter=".filter-this-year">This Year</li>
+                    <li data-filter=".filter-this-year">Upcoming</li>
                     <li data-filter=".filter-past">Past</li>
                 </ul><!-- End Portfolio Filters -->
             </div>
