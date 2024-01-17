@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Event; // Import the Student class from the appropriate namespace
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class EventController extends Controller
 {
@@ -47,6 +48,7 @@ class EventController extends Controller
         $event->event_category = $request->input('event_category');
         $event->event_format = $request->input('event_format');
         $event->event_description = $request->input('event_description');
+        $event->event_email = $request->input('event_email');
         if ($request->hasFile('event_img')) {
             $imagePath = $request->file('event_img')->store('event_images', 'public');
             $event->event_img = $imagePath;
@@ -88,6 +90,27 @@ class EventController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $event = Event::findOrFail($id);
+
+        // Check if the user is authenticated
+        if (auth()->check()) {
+            $userEmail = auth()->user()->email; // Get the email of the authenticated user
+
+
+            // Check if the authenticated user's email matches the event's email
+            if ($userEmail === $event->event_email) {
+                $event->delete();
+
+                return redirect()->route('homepage')
+                    ->with('success', 'Event deleted successfully');
+            } else {
+                return redirect()->route('homepage')
+                    ->with('error', 'You do not have permission to delete this event');
+            }
+        } else {
+            return redirect()->route('homepage')
+                ->with('error', 'You need to be authenticated to delete an event');
+        }
     }
+
 }

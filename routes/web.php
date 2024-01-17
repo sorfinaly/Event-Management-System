@@ -86,9 +86,13 @@ Route::get('/eventdetailsss', function () {
 });
 
 
-Route::get('/homepage', [EventController::class, 'index']);
+// Route::get('/homepage', [EventController::class, 'index']);
+
+Route::get('/homepage', [EventController::class, 'index'])->name('homepage');
+
 Route::get('/createevent', [EventController::class, 'create']);
 Route::post('/createevent', [EventController::class, 'store']);
+
 
 Route::get('/search', [SearchController::class, 'index'])->name('search');
 
@@ -108,3 +112,4 @@ Route::delete('/delete-account', [DeleteAccountManager::class,'delete'])->name('
 // });
 
 Route::get('/{id}', [EventController::class, 'show'])->name('eventdetail');
+Route::delete('/events/{id}', [EventController::class, 'destroy'])->name('events.destroy');
