@@ -7,6 +7,8 @@ use App\Http\Controllers\SearchController;
 use App\Http\Controllers\ForgetPasswordManager;
 use App\Http\Controllers\freeparticipantsController;
 use App\Http\Controllers\feeparticipantsController;
+use App\Http\Controllers\feecommitteeController;
+use App\Http\Controllers\freecommitteeController;
 use App\Http\Controllers\DeleteAccountManager;
 
 Route::get('/', function () {
@@ -44,10 +46,19 @@ Route::get('/formparticipantfree', function () {
 // Keep this route
 Route::get('/profile', [AuthManager::class, 'showProfile'])->name('profile');
 
-Route::get('/formcommittee', function () {
-    return view('formcommittee');
+//committee
+Route::get('/feecommitteelist', function () {
+    return view('feecommitteelist');
 });
 
+Route::get('/formcommitteefee', function () {
+    return view('formcommitteefee');
+});
+
+Route::get('/feecommitteelist',[feecommitteeController::class,'index']);
+Route::resource('addfeecommittee', feecommitteeController::class);
+
+//participants
 Route::get('/formparticipantfee', function () {
     return view('formparticipantfee');
 });
@@ -68,6 +79,12 @@ Route::get('/freeparticipantslist',[freeparticipantsController::class,'index']);
 Route::resource('addfreeparticipant', freeparticipantsController::class);
 Route::get('/feeparticipantslist',[feeparticipantsController::class,'index']);
 Route::resource('addfeeparticipant', feeparticipantsController::class);
+
+//event
+Route::get('/eventdetailsss', function () {
+    return view('eventdetailsss');
+});
+
 
 Route::get('/homepage', [EventController::class, 'index']);
 Route::get('/createevent', [EventController::class, 'create']);
