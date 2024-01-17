@@ -122,4 +122,26 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/aa41901a-7c7f-4838-bfb0-bb2f0abf1aae)
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/bfd28ef6-489c-4008-b5b0-f765eae1f55c)
 
+<h3>Project system captured screen and explanation</h3> <br>
 
+1. Homepage (Main page for user and admin)
+2. Homepage (when scrolled down)
+3. Homepage (when scrolled to the bottom)
+4. Login (for user that have @live.iium.edu.my only)
+5. Forgot Password Page
+6. Registration (same validation with login page but with additional data which is name)
+7. List of Participant
+8. List of Committee
+9. Event Registration Form
+10. Committee Registration Form (Free)
+11. Committee Registration Form (Need payment)
+12. Profile page
+13. Change Password
+14. Change Profile Picture
+15. Delete Account
+
+<h3>Challenge/difficulties to develop the application</h3>
+
+- The most challenges for using github is because of the misunderstandings in branching, merging, and conflict resolution, and this can create frustration and delays in our group project. But if we can undertand the flow of the whole github and our project itself, it makes a lot better in continuing our projects.
+- While understanding branching, merging, and conflict resolution can be complex in GitHub, I believe communication and commitment are even bigger challenges for group projects. Misunderstandings between team members due to unclear expectations or lack of communication can easily lead to missed deadlines but with great communications, this project will pogressing smoothly.
+-  Balancing individual study/work schedules with project deadlines, exams for various courses and responsibilities can be challenging. Uneven commitment from team members can create  and impact overall project success. The lack of time for doing the this project within 2 weeks may be challenging for most parts. However, with thorough time management, this task is possible.
