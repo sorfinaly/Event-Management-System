@@ -14,12 +14,12 @@
 
                             <!-- User Profile Info -->
                             <div class="d-flex flex-column align-items-center text-center md-5">
-                                <img class="rounded-circle mt-5" width="150px" src="{{ asset($user->profile_photo_path) ?? 'mahito.png' }}">
-
-                                <span class="font-weight-bold">{{ $user->role }}</span>
+                                <img class="rounded-circle profile-image" width="150px" src="{{ $user->profile_photo_path ?? 'storage/profile_photo/mahito.png' }}" alt="Profile picture">
+                                <span class="font-weight-bold role">{{ $user->role == 0 ? 'User' : ($user->role == 1 ? 'Committee' : '') }}</span>
                                 <form method="POST" action="{{ route('changeProfile') }}" enctype="multipart/form-data">
-                                <!-- Add the file input here -->
-                                <span><input type="file" name="profile_photo" id="profile_photo" class = "alignment"></span>
+                                    <!-- Add the file input here -->
+                                    <span class="file-input"><input type="file" name="profile_photo" id="profile_photo" class="alignment"></span>
+                                </form>
                             </div>
 
                             <!-- Profile Settings -->
