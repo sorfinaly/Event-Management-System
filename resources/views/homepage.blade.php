@@ -89,6 +89,7 @@
                                             <tbody>
 
                                                 @foreach ($events as $event)
+                                                <p><a href="{{ route('eventdetail', ['id' => $event->id]) }}">{{ $event->event_name }}</a></p>
                                                     <tr>
                                                         <td>{{ $event->event_name }}</td>
                                                         <td>{{ $event->priced_event }}</td>

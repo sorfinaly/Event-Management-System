@@ -84,3 +84,10 @@ Route::post("/reset-password", [ForgetPasswordManager::class, "resetPasswordPost
 
 Route::get('/delete-account', [DeleteAccountManager::class, "confirmDelete"])->name("delete.account.confirm");
 Route::delete('/delete-account', [DeleteAccountManager::class,'delete'])->name('delete.account');
+
+
+// Route::get('/EventDetails', function () {
+//     return view('EventDetails');
+// });
+
+Route::get('/event/{id}', [EventController::class, 'show'])->name('eventdetail');
