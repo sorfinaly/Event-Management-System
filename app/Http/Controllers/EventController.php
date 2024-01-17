@@ -60,9 +60,11 @@ class EventController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show()
+    public function show(string $id)
     {
+            $event = Event::find($id);
 
+            return view('eventdetail', ['event' => $event]);
     }
 
     /**
