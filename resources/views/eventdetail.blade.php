@@ -29,25 +29,46 @@
                     <div style="padding-top:60px; padding-left:40px; padding-bottom:40px;"><label for="priced-event">Date: <span>{{ $eventDate->format('d-m-Y') }}</span></label></div>
                     <div style="padding-left:40px; padding-bottom:10px;"><label for="priced-event">Time: <span>{{ $event->start_time }} - {{ $event->end_time }}</span></label></div>
                     <div style="padding-left:40px; padding-top:30px;"><label for="priced-event">Price: <span>{{ $pricingInfo }}</span></label></div>
-                    <div style="padding-left:40px; padding-top:30px;"><label for="priced-event">email: <span>{{ $event->event_email }}</span></label></div>
+                    <div style="padding-left:40px; padding-top:30px;"><label for="priced-event">Contact: <span>{{ $event->event_email }}</span></label></div>
                 </div>
 
             </div>
-            <div> <form action="{{ route('events.destroy', $event->id) }}" method="POST" >
+
+            <div class="form-row"  style="margin-bottom: 20px;">
+
+                <form action="{{ route('events.destroy', $event->id) }}" method="POST" >
                 @csrf
                 @method('DELETE')
-
+                <button onclick="return confirm('Are you sure you want to delete this event?')" type="submit" id="submit" class="btn btn-primary" style="background-color: #2A6562; color: white;">Delete Event</button>
                 <!-- Add a confirmation dialog (optional) -->
                 {{-- <button type="submit" id="submit" class="btn btn-primary" onclick="return confirm('Are you sure you want to delete this event?')">Delete Event</button> --}}
-            </form></div>
+                </form>
+
+            </div>
 
 
             <div style="background-color:white ; margin-top:10px; border-radius:30px; padding-top:5px; padding-left:20px; padding-bottom:5px;">
                 <div style="margin-top:20px; padding-bottom:10px; padding-left:20px;" ><label style="font-weight: bold;">Details</label></div>
-                <p style="padding:20px;">{{ $event->event_description}}</p>
+                <div><p style="padding:20px;">{{ $event->event_description}}</p></div>
             </div>
 
+            <div class="d-flex justify-content-between align-items-center pb-4">
+                <button onclick="window.location.href='/homepage'"class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
+                  <i class="bi bi-arrow-left me-2"></i> Back
+                </button>
 
+                <div class="d-flex justify-content-center align-items-center pb-4">
+                    @if ($event->priced_event == 'free')
+                        <button onclick="window.location.href='/freeparticipantslist'" class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
+                            Join as participant <i class="bi bi-check me-2"></i>
+                        </button>
+                    @else
+                        <button onclick="window.location.href='/feeparticipantslist'" class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
+                            Join as participant <i class="bi bi-check me-2"></i>
+                        </button>
+                    @endif
+                </div>
+            </div>
       </div>
 </div>
 @endsection
