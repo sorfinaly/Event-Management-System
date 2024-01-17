@@ -90,4 +90,4 @@ Route::delete('/delete-account', [DeleteAccountManager::class,'delete'])->name('
 //     return view('EventDetails');
 // });
 
-Route::get('/event/{id}', [EventController::class, 'show'])->name('eventdetail');
+Route::get('/{id}', [EventController::class, 'show'])->name('eventdetail');
