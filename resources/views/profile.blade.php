@@ -22,30 +22,28 @@
 
                             <!-- Profile Settings -->
                             <div class="info">
-                                @if (isset($success))
+                                @if (isset($profileSuccess))
                                         <div class="alert alert-success">
-                                            {{ $success }}
+                                            {{ $profileSuccess }}
                                         </div>
                                     @endif
 
-                                    @if (isset($error))
+                                    @if (isset($profileErrors))
                                         <div class="alert alert-danger">
-                                            {{ $error }}
+                                            {{ $profileErrors }}
                                         </div>
                                     @endif
 
-                                    @if (isset($errors) && count($errors) > 0)
+                                    @if (isset($profileErrors) && count($profileErrors) > 0)
                                         <div class="alert alert-danger">
-                                            @foreach ($errors->all() as $error)
-                                            {{ $error }}
+                                            @foreach ($profileErrors->all() as $profileErrors)
+                                            {{ $profileErrors }}
                                             @endforeach
                                         </div>
                                     @endif
 
                                     <form method="POST" action="{{ route('changeProfile') }}">
                                         @csrf
-
-                                        @method('put')
                                         <input type="text" class="form-control" id="currentName" name="currentName" value="{{$user->name}}">
                                         <input type="text" class="form-control" id="currentEmail" name="currentEmail" value="{{$user->email}}">
                                         <input type="text" class="form-control" id="currentPhone" name="currentPhone" placeholder="Place Your Phone Number Here" value="{{$user->phone}}">
@@ -64,25 +62,25 @@
                     <div class="card-body">
                         <h5 class="card-title text-left">Change Password</h5>
 
-                            @if (isset($success))
+                            @if (isset($passwordSuccess))
                             <div class="alert alert-success">
-                                {{ $success }}
+                                {{ $passwordSuccess }}
                             </div>
                             @endif
 
-                            @if (isset($error))
+                            @if (isset($currentPasswordError))
                             <div class="alert alert-danger">
-                                {{ $error }}
+                                {{ $currentPasswordError }}
                             </div>
-                            @endif
+                        @endif
 
-                            @if (isset($errors) && count($errors) > 0)
-                            <div class="alert alert-danger">
-                                @foreach ($errors->all() as $error)
-                                {{ $error }}
-                                @endforeach
-                            </div>
-                            @endif
+                        @if (isset($passwordErrors) && $passwordErrors->has('newPassword'))
+                        <div class="alert alert-danger">
+                            {{ $passwordErrors->first('newPassword') }}
+                        </div>
+                    @endif
+
+
 
                         <form method="POST" action="{{ route('changePassword') }}">
                             @csrf

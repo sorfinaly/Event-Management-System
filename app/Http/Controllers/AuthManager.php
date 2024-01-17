@@ -87,35 +87,32 @@ class AuthManager extends Controller
         return redirect(route('home'));
     }
 
-    function changePassword(Request $request){
-        $validator = Validator::make($request->all(), [
-            'currentPassword' => 'required',
-            'newPassword' => 'required|confirmed',
-        ]);
+ function changePassword(Request $request){
+    $validator = Validator::make($request->all(), [
+        'currentPassword' => 'required',
+        'newPassword' => 'required|confirmed',
+    ]);
 
-        $user = Auth::user();
+    $user = Auth::user();
 
-        if (!Hash::check($request->currentPassword, $user->password)) {
-            //return view('profile', ['error' => 'Current password is incorrect']);
-            return view('profile', ['user' => $user, 'error' => 'Current password is incorrect']);
-        }
-        if ($validator->fails()) {
-            //return view('profile', ['errors' => $validator->errors()]);
-            return view('profile', ['user' => $user, 'errors' => $validator->errors()]);
-        }
-        $user->password = Hash::make($request->newPassword);
-        $user->save();
-
-        //return view('profile', ['success' => 'Password changed successfully']);
-        return view('profile', ['user' => $user, 'success' => 'Password changed successfully']);
+    if (!Hash::check($request->currentPassword, $user->password)) {
+        return view('profile', ['user' => $user, 'currentPasswordError' => 'Current password is incorrect']);
+    }
+    if ($validator->fails()) {
+        return view('profile', ['user' => $user, 'passwordErrors' => $validator->errors()]);
     }
 
+    $user->password = Hash::make($request->newPassword);
+    $user->save();
+
+    return view('profile', ['user' => $user, 'passwordSuccess' => 'Password changed successfully']);
+}
     function showProfile(){
         $user = Auth::user(); // Get the currently authenticated user
         return view('profile', ['user' => $user]);
     }
 
-    function changeProfile(){
+    function changeProfile(Request $request){
         $validator = Validator::make($request->all(), [
             'currentName' => 'required',
             'currentEmail' => 'required',
@@ -125,13 +122,17 @@ class AuthManager extends Controller
         $user = Auth::user();
 
         if ($validator->fails()) {
-            //return view('profile', ['errors' => $validator->errors()]);
-            return view('profile', ['user' => $user, 'errors' => $validator->errors()]);
+            return view('profile', ['user' => $user, 'profileErrors' => $validator->errors()]);
         }
+
+        // Update the user's data
+        $user->name = $request->currentName;
+        $user->email = $request->currentEmail;
+        $user->phone = $request->currentPhone;
 
         $user->save();
 
-        //return view('profile', ['success' => 'Password changed successfully']);
-        return view('profile', ['user' => $user, 'success' => 'Profile Updated']);
+        return view('profile', ['user' => $user, 'profileSuccess' => 'Profile Updated']);
     }
+
 }
