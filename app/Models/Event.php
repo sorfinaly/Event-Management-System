@@ -24,6 +24,7 @@ class Event extends Model
         'event_category',
         'event_format',
         'event_description',
+        'event_email',
         'event_img',
     ];
 }

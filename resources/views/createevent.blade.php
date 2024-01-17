@@ -108,6 +108,8 @@
             <div class="form-group">
                 <label for="event-description">Event Description</label>
                 <textarea class="form-control" id="event-description" rows="3" name='event_description'></textarea>
+                <label for="event_email" style="margin-top:20px;">Email</label>
+                <input type="email" class="form-control" id="event_email" name="event_email">
             </div>
             <div class="form-group" style="margin-bottom: 40px; margin-top: 30px;text-align: center;">
                 <div style="display: flex; flex-direction: column; align-items: center; border: 4px dashed #000; padding: 50px;">
