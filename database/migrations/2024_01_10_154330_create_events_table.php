@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('event_category')->nullable();
             $table->string('event_format')->nullable();
             $table->text('event_description')->nullable();
+            $table->string('event_email')->nullable();
             $table->string('event_img')->nullable(); // This column will store the path to the file
             $table->timestamps();
         });

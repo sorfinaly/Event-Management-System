@@ -29,12 +29,21 @@
                     <div style="padding-top:60px; padding-left:40px; padding-bottom:40px;"><label for="priced-event">Date: <span>{{ $eventDate->format('d-m-Y') }}</span></label></div>
                     <div style="padding-left:40px; padding-bottom:10px;"><label for="priced-event">Time: <span>{{ $event->start_time }} - {{ $event->end_time }}</span></label></div>
                     <div style="padding-left:40px; padding-top:30px;"><label for="priced-event">Price: <span>{{ $pricingInfo }}</span></label></div>
+                    <div style="padding-left:40px; padding-top:30px;"><label for="priced-event">email: <span>{{ $event->event_email }}</span></label></div>
                 </div>
 
             </div>
+            <div> <form action="{{ route('events.destroy', $event->id) }}" method="POST" >
+                @csrf
+                @method('DELETE')
 
-            <div style="background-color:white ; border-radius:30px; padding-top:5px; padding-left:20px; padding-bottom:5px;">
-                <div style="margin-top:40px; padding-bottom:10px; padding-left:20px;" ><label style="font-weight: bold;">Details</label></div>
+                <!-- Add a confirmation dialog (optional) -->
+                {{-- <button type="submit" id="submit" class="btn btn-primary" onclick="return confirm('Are you sure you want to delete this event?')">Delete Event</button> --}}
+            </form></div>
+
+
+            <div style="background-color:white ; margin-top:10px; border-radius:30px; padding-top:5px; padding-left:20px; padding-bottom:5px;">
+                <div style="margin-top:20px; padding-bottom:10px; padding-left:20px;" ><label style="font-weight: bold;">Details</label></div>
                 <p style="padding:20px;">{{ $event->event_description}}</p>
             </div>
 
