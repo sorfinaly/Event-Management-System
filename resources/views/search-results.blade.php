@@ -12,7 +12,7 @@
             <ul>
                 @foreach ($results as $event)
                     <li>
-                        <a href="{{ route('eventdetails', ['id' => $event->id]) }}">
+                        <a href="{{ route('eventdetail', ['id' => $event->id]) }}">
                             {{ $event->event_name }}
                         </a>
                     </li>

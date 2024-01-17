@@ -31,7 +31,7 @@
   <!-- End Hero Section -->
 
   <main id="main">
-
+{{-- 
     <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 mx-auto float-right">
         <div class="card mb-2" style="border-radius: 10em; background: linear-gradient(to right, #168276, #168276);">
             <div class="card-body p-2">
@@ -115,7 +115,7 @@
                 </div>
             </div>
         </div>
-      </section>
+      </section> --}}
 
 
  <section id="portfolio" class="portfolio sections-bg">
@@ -165,7 +165,7 @@
                                 <img src="{{ asset('storage/' . $event->event_img) }}" class="img-fluid" alt="{{ $event->event_name }}">
                             </a>
                             <div class="portfolio-info">
-                                <h4 style="color:#168276">{{ $event->event_name }}</h4>
+                                <h4 style="color:#168276"><a href="{{ route('eventdetail', ['id' => $event->id]) }}">{{ $event->event_name }}</a></h4>
                                 <p><span style="font-weight: bold">Date: </span>{{ $eventDate->format('d-m-Y') }}</p>
                                 <p><span style="font-weight: bold">Time: </span>{{ $event->start_time }} - {{ $event->end_time }}</p>
                                 <p><span style="font-weight: bold">Pricing: </span>{{ $pricingInfo }}</p><br>
