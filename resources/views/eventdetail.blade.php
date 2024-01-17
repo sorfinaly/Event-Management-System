@@ -4,7 +4,7 @@
 
 
 <div class = "background">
-      <h2>{{ $event->event_name }}</h2>
+      <h2><a href="{{ route('eventdetail', ['id' => $event->id]) }}">{{ $event->event_name }}</a></h2>
 
       <div class="form-background">
         @php
