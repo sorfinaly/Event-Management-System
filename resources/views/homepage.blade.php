@@ -1,13 +1,6 @@
 @extends('master.layout')
 @section('content')
-<style>
 
-/* Using an ID */
-#search {
-    border: none;
-}
-
-</style>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero">
     <div class="container position-relative">
@@ -39,16 +32,16 @@
   <!-- End Hero Section -->
 
     <main id="main">
-
-    <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 mx-auto ">
+{{--
+    <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 mx-auto float-right">
         <div class="card mb-2" style="border-radius: 10em; background: linear-gradient(to right, #168276, #168276);">
             <div class="card-body p-2">
                 <form  id="searchForm" action="{{ route('search') }}" method="GET">
                     @csrf
                 <div class="input-group input-group-sm">
-                    <input type="text" name="query" class="form-control form-control-sm rounded bg-transparent text-white" id="search" placeholder="Search Event" aria-label="Search Event" aria-describedby="basic-addon2" style="height: 30px;" />
+                    <input type="text" class="form-control form-control-sm rounded bg-transparent text-white" id="search" placeholder="Search Event" aria-label="Search Event" aria-describedby="basic-addon2" style="height: 35px;" />
                     <span class="input-group-text border-0" id="basic-addon2">
-                        <button type="submit" class="search"  style="font-size: 15px;"> <i class="fa fa-search" style="font-size: 25px; color:#e79494"></i> </button>
+                        <button class="search" onclick="performSearch()" style="font-size: 15px;"> <i class="fa fa-search" style="font-size: 25px; color:#e79494"></i> </button>
                     </span>
                 </div>
                 </form>
@@ -68,7 +61,7 @@
     </script>
 
 
-{{--
+
       <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
         <div class="overlay-mf"></div>
             <div class="container">
@@ -138,7 +131,7 @@
                 <ul class="portfolio-flters">
                     <li data-filter="*" class="filter-active">All</li>
                     <li data-filter=".filter-this-month">This Month</li>
-                    <li data-filter=".filter-this-year">Upcoming</li>
+                    <li data-filter=".filter-this-year">Upcoming Months</li>
                     <li data-filter=".filter-past">Past</li>
                 </ul><!-- End Portfolio Filters -->
             </div>
