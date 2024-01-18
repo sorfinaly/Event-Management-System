@@ -3,13 +3,14 @@
 
 
 @section('content')
-    <div class="container">
+    <div class="box">
         <h2>Search Results for "{{ $query }}"</h2>
 
+        <div style="margin-left: 120px;">
         @if ($results->isEmpty())
             <p>No results found.</p>
         @else
-            <ul>
+            <ul >
                 @foreach ($results as $event)
                     <li>
                         <a href="{{ route('eventdetail', ['id' => $event->id]) }}">
@@ -19,5 +20,7 @@
                 @endforeach
             </ul>
         @endif
+
+    </div>
     </div>
 @endsection
