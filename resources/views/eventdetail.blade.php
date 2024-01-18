@@ -45,7 +45,7 @@
                     <i class="bi bi-arrow-left me-2"></i> Back
                 </button>
 
-                <div class="d-flex justify-content-center align-items-center pb-4" style="margin-top:30px;">
+                <div class="d-flex justify-content-center align-items-center pb-4" style="margin-top:25px;">
                     <form action="{{ route('events.destroy', $event->id) }}" method="POST">
                         @csrf
                         @method('DELETE')
