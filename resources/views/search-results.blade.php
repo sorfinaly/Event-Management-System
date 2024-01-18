@@ -6,7 +6,7 @@
     <div class="box">
         <h2>Search Results for "{{ $query }}"</h2>
 
-        <div style="margin-left: 120px;">
+        <div style="margin-left: 120px; font-size: 20px;">
         @if ($results->isEmpty())
             <p>No results found.</p>
         @else

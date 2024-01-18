@@ -80,6 +80,7 @@
 
 .box li {
   margin-bottom: 10px; /* Add spacing between list items */
+  font-size: 20px;
 
 }
 
