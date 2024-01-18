@@ -28,7 +28,7 @@
                     <div style="padding-top:60px; padding-left:40px; padding-bottom:40px;"><label for="priced-event">Date: <span>{{ $eventDate->format('d-m-Y') }}</span></label></div>
                     <div style="padding-left:40px; padding-bottom:10px;"><label for="priced-event">Time: <span>{{ $event->start_time }} - {{ $event->end_time }}</span></label></div>
                     <div style="padding-left:40px; padding-top:30px;"><label for="priced-event">Price: <span>{{ $pricingInfo }}</span></label></div>
-                    <div style="padding-left:40px; padding-top:30px;"><label for="priced-event">Contact: <span>{{ $event->event_email }}</span></label></div>
+                    <div style="padding-left:40px; padding-top:30px; padding-bottom:30px;"><label for="priced-event">Contact: <span>{{ $event->event_email }}</span></label></div>
                 </div>
 
             </div>
@@ -45,7 +45,7 @@
                     <i class="bi bi-arrow-left me-2"></i> Back
                 </button>
 
-                <div class="d-flex justify-content-center align-items-center pb-4">
+                <div class="d-flex justify-content-center align-items-center pb-4" style="margin-top:30px;">
                     <form action="{{ route('events.destroy', $event->id) }}" method="POST">
                         @csrf
                         @method('DELETE')

@@ -58,6 +58,36 @@
         border-color: transparent;
         box-shadow: inset 0 0 0 1px transparent;
     }
+    .box {
+  background-color: #f5f5f5; /* Light gray background for visual separation */
+  padding: 50px; /* Add padding for content spacing */
+  border-radius: 10px; /* Soften edges with rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  margin: 100px 100px 15px 100px; /* top right bottom left */
+
+}
+
+.box h2 {
+  margin-bottom: 20px; /* Add space between heading and content */
+  text-align: center; /* Center the heading */
+}
+
+.box ul {
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* Remove default list padding */
+
+}
+
+.box li {
+  margin-bottom: 10px; /* Add spacing between list items */
+
+}
+
+.box a {
+  text-decoration: none; /* Remove underline from links */
+  color: #2A6562; /* Set link color to match other elements */
+}
+
 
 
     .form-control::placeholder {
