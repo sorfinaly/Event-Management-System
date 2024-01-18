@@ -51,7 +51,7 @@
 
             <div class="form-group d-flex justify-content-between mb-3">
                 <label for="payment_proof" class="w-25 font-weight-bold form-control-lg">Payment Proof :</label>
-                <input type="text" name="payment_proof" class="form-control" id="payment_proof" placeholder="Enter your payment proof" required>
+                <input type="text" name="payment_proof" class="form-control" id="payment_proof" placeholder="Enter link to your receipt file" required>
             </div>
 
             {{-- <div style="display: inline-block;">

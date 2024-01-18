@@ -33,25 +33,7 @@
 
             </div>
 
-            <div class="form-row"  style="margin-bottom: 20px;">
-
-                <form action="{{ route('events.destroy', $event->id) }}" method="POST" >
-                @csrf
-                @method('DELETE')
-                <button onclick="return confirm('Are you sure you want to delete this event?')" type="submit" id="submit" class="btn btn-primary" style="background-color: #2A6562; color: white;">Delete Event</button>
-                <!-- Add a confirmation dialog (optional) -->
-                {{-- <button type="submit" id="submit" class="btn btn-primary" onclick="return confirm('Are you sure you want to delete this event?')">Delete Event</button> --}}
-                </form>
-
-            <div style="background-color:white; margin-bottom:50px; border-radius:30px; padding-top:5px; padding-left:20px; padding-bottom:5px;">
-                <div style="margin-top:40px; padding-bottom:10px; padding-left:20px;" ><label style="font-weight: bold;">Details</label></div>
-                <p style="padding:20px;">{{ $event->event_description}}</p>
-            </div>
-
-            <div class="d-flex justify-content-between align-items-center pb-4">
-                <button onclick="window.location.href='/homepage'"class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
-                  <i class="bi bi-arrow-left me-2"></i> Back
-                </button>
+            {{-- <div class="form-row"  style="margin-bottom: 20px;"> --}}
 
             <div style="background-color:white ; margin-top:10px; border-radius:30px; padding-top:5px; padding-left:20px; padding-bottom:5px;">
                 <div style="margin-top:20px; padding-bottom:10px; padding-left:20px;" ><label style="font-weight: bold;">Details</label></div>
@@ -59,37 +41,31 @@
             </div>
 
             <div class="d-flex justify-content-between align-items-center pb-4">
-                <button onclick="window.location.href='/homepage'"class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
-                  <i class="bi bi-arrow-left me-2"></i> Back
+                <button onclick="window.location.href='/homepage'" class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
+                    <i class="bi bi-arrow-left me-2"></i> Back
                 </button>
 
-                <div class="d-flex justify-content-center align-items-center pb-4">
-
-                    <form action="{{ route('events.destroy', $event->id) }}" method="POST" >
-                    @csrf
-                    @method('DELETE')
-                    <button onclick="return confirm('Are you sure you want to delete this event?')" type="submit" id="submit" class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">Delete Event</button>
-                    <!-- Add a confirmation dialog (optional) -->
-                    {{-- <button type="submit" id="submit" class="btn btn-primary" onclick="return confirm('Are you sure you want to delete this event?')">Delete Event</button> --}}
+                <div class="d-flex justify-content-center align-items-center pb-4" style="margin-top:25px">
+                    <form action="{{ route('events.destroy', $event->id) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button onclick="return confirm('Are you sure you want to delete this event?')" type="submit" id="submit" class="btn btn-lg d-flex align-items-center" style="background-color: #cc0000; color: white;">
+                            Delete Event
+                        </button>
                     </form>
-
                 </div>
 
                 <div class="d-flex justify-content-center align-items-center pb-4">
                     @if ($event->priced_event == 'free')
-                        <button onclick="window.location.href='/freeparticipantslist'" class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
-                            Join as participant <i class="bi bi-check me-2"></i>
-                        </button>
+                    <button onclick="window.location.href='/freeparticipantslist'" class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
+                        Join as participant <i class="bi bi-check me-2"></i>
+                    </button>
                     @else
-                        <button onclick="window.location.href='/feeparticipantslist'" class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
-                            Join as participant <i class="bi bi-check me-2"></i>
-                        </button>
+                    <button onclick="window.location.href='/feeparticipantslist'" class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
+                        Join as participant <i class="bi bi-check me-2"></i>
+                    </button>
                     @endif
                 </div>
-
-                {{-- <button onclick="window.location.href='/feecommitteelist'" class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
-                    Join as Committee <i class="bi bi-check me-2"></i>
-                </button> --}}
             </div>
 
          </div>

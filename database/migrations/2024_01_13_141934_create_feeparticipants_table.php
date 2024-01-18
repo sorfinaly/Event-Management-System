@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('kuliyyah', 8);
             $table->string('phone_no', 15);
-            $table->string('payment_proof', 15);
+            $table->string('payment_proof', 100);
             $table->timestamps();
         });
     }

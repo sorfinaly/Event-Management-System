@@ -131,7 +131,7 @@
                 <ul class="portfolio-flters">
                     <li data-filter="*" class="filter-active">All</li>
                     <li data-filter=".filter-this-month">This Month</li>
-                    <li data-filter=".filter-this-year">Upcoming</li>
+                    <li data-filter=".filter-this-year">Upcoming Months</li>
                     <li data-filter=".filter-past">Past</li>
                 </ul><!-- End Portfolio Filters -->
             </div>

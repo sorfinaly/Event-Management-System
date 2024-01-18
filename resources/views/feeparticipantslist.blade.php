@@ -26,7 +26,7 @@
                         <td>{{ $feeparticipant->email }}</td>
                         <td>{{ $feeparticipant->kuliyyah }}</td>
                         <td>{{ $feeparticipant->phone_no }}</td>
-                        <td>{{ $feeparticipant->payment_proof }}</td>
+                        <td><a href="{{ $feeparticipant->payment_proof }}" target="_blank">View Payment Proof</a></td>
                     </tr>
                 @endforeach
 
@@ -55,7 +55,7 @@
           </table>
 
         <div class="d-flex justify-content-between align-items-center pb-4">
-            <button onclick="window.location.href='/eventdetails'"class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
+            <button onclick="window.location.href='/homepage'"class="btn btn-lg d-flex align-items-center" style="background-color: #2A6562; color: white;">
               <i class="bi bi-arrow-left me-2"></i> Back
             </button>
             <form>
