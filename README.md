@@ -178,9 +178,25 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 14. Committee Registration Form (Free)
 15. Committee Registration Form (Need payment)
 16. Profile page
-17. Change Password
-18. Change Profile Picture
-19. Delete Account
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/2a574ff2-8a52-41e2-86ae-0e2fd8048b03)
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/e4a262ba-c047-4781-9233-15d5880d7082)
+
+17. Update profile (update name, email, phone number and also update profile picture)
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/6cbabcda-6f77-4bf8-9b9a-589b8f36d6f7)
+
+18. Change Password
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/5071c35d-f1a9-424e-a6ff-fc8e204f4d90)
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/d8394295-deea-41d2-8d3c-79a334d19cd1)
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/4188d342-d99a-47a2-81f3-18f9108b1be8)
+
+20. Delete Account
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/c1e6ad03-0553-4934-83d9-fbab3c4de41e)
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/4a234d66-dac5-43ae-a918-fcacaf8fc3ca)
+
 
 <h3>Challenge/difficulties to develop the application</h3>
 
