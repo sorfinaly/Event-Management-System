@@ -1,7 +1,7 @@
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/ef1bfa1e-c59d-4f13-8a56-7dd8aa402590)
 
 # Title: IIUM Event Management System
-## Group Members:
+## Group Members
 
 | NAME                           | MATRIC_NO |
 |:------------------------------:|:---------:|
