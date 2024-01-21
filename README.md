@@ -7,8 +7,8 @@
 |:------------------------------:|:---------:|
 | SORFINA ALYIA BINTI JAZRRY     | 2017326   |
 | SHAFIQAH BINTI GHAZALI         | 2111362   |
-| SIDDIQUI MARYAM                | 2115928   |
 | KHAIRINA MAISARAH BINTI HUSNY  | 2129358   |
+| SIDDIQUI MARYAM                | 2115928   |
 
 Prepared for: DR. MOHD KHAIRUL AZMI BIN HASSAN
 
