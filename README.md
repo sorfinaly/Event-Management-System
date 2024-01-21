@@ -197,6 +197,10 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/c1e6ad03-0553-4934-83d9-fbab3c4de41e)
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/4a234d66-dac5-43ae-a918-fcacaf8fc3ca)
 
+21. Logout (user will redirect to login back)
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/ce31ab59-8c1a-4c57-a9b2-926c034c9577)
+
 
 <h3>Challenge/difficulties to develop the application</h3>
 
