@@ -12,7 +12,7 @@
 
 Prepared for: DR. MOHD KHAIRUL AZMI BIN HASSAN
 
-### Introduction
+## Introduction
 
 <p style='text-align: justify;'>
     Welcome to the IIUM Event Management System, your gateway to seamless event coordination within the IIUM environment! The IIUM Event Management System has been developed with a keen understanding that event management plays a critical role in shaping the vibrant culture and community spirit at the International Islamic University Malaysia (IIUM).  Recognizing the importance of efficient event management, this system is meticulously designed for students, students organizations, kulliyyah members, and university staff alike to streamline and simplify the process of planning, organizing, and managing events within the IIUM environment. 
@@ -34,14 +34,14 @@ Prepared for: DR. MOHD KHAIRUL AZMI BIN HASSAN
 
 </p>
 
-<h3>System Requirements</h3>
+## System Requirements
 <ul>
     <li>Server: Compatible with common web servers (Apache, Nginx, etc.)</li>
     <li>Database: MySQL or PostgreSQL for robust data management.</li>
     <li>PHP Version: 7.4 or higher.</li>
 </ul>
 
-<h3>Objective</h3>
+## Objective
 
 The objective of the IIUM Event Management System is to streamline and simplify the process of planning, organizing, and managing events within the International Islamic University Malaysia (IIUM) environment. The website aims to serve as a centralized platform, providing comprehensive solutions for efficient event coordination among various stakeholders, including students, student organizations, faculty members, and university staff. 
 
@@ -50,7 +50,7 @@ The objective of the IIUM Event Management System is to streamline and simplify 
 <br>3. Help to promote the upcoming events to a bigger crowd.</b>
 <br>4. Provide students a platform to easily join more programs for extra co-curricular.</b>
 
-<h3>Features & Functionality</h3>
+## Features & Functionality
 <ul>
     <li>Registration form to publish the event</li>
     <li>Registration form to join the event</li>
@@ -60,18 +60,17 @@ The objective of the IIUM Event Management System is to streamline and simplify 
     <li>search bar and filter keyword</li>
 </ul>
 
-<h3>ERD Diagram</h3>
+## ER Diagram
 
 In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, we architecturally represent the core functionalities and interactions within the system. The ERD summarizes the system's processes while emphasizing the relationships and properties of the entities involved. 
 
 ![erd diagram](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/2eb7370b-8bf6-4db7-9310-0870fffef40c)
 
-<h3>Sequence Diagram</h3> <br>
+## Sequence Diagram
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/498c5051-25bd-4a2c-9e07-a479f455983a)
 
-
-<h3>Website Mockups</h3>
+## Website Mockups
 
 1. Login and Home Page
 
@@ -122,7 +121,9 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/aa41901a-7c7f-4838-bfb0-bb2f0abf1aae)
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/bfd28ef6-489c-4008-b5b0-f765eae1f55c)
 
-<h3>Project system captured screen and explanation</h3> <br>
+
+
+## Project system captured screen and explanation
 
 1. Homepage (Main page for user and admin)
 2. Homepage (when scrolled down)
@@ -159,50 +160,49 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/63d5520d-805c-4102-b2dd-54e43814cbee)
 
-10. Registration (same validation with login page but with additional data which is name - for user that have @live.iium.edu.my only)
+11. Registration (same validation with login page but with additional data which is name - for user that have @live.iium.edu.my only)
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/b1509270-1546-4d47-838f-b021539cb8bc)
 
 
-11. Registration Page (when user try to register using email other than @live.iium.edu.my or @iium.edu.my)
+12. Registration Page (when user try to register using email other than @live.iium.edu.my or @iium.edu.my)
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/99a4bfdc-8bd0-426c-8856-78a6c853dfce)
 
-12. Login Page (need to login first before entering event management system)
+13. Login Page (need to login first before entering event management system)
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/ae043eec-b98b-4e87-9ae0-47538c8cdb51)
 
-11. List of Participant
-12. List of Committee
-13. Event Registration Form
-14. Committee Registration Form (Free)
-15. Committee Registration Form (Need payment)
-16. Profile page
+14. List of Participant
+15. List of Committee
+16. Event Registration Form
+17. Committee Registration Form (Free)
+18. Committee Registration Form (Need payment)
+19. Profile page
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/2a574ff2-8a52-41e2-86ae-0e2fd8048b03)
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/e4a262ba-c047-4781-9233-15d5880d7082)
 
-17. Update profile (update name, email, phone number and also update profile picture)
+20. Update profile (update name, email, phone number and also update profile picture)
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/6cbabcda-6f77-4bf8-9b9a-589b8f36d6f7)
 
-18. Change Password
+21. Change Password
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/5071c35d-f1a9-424e-a6ff-fc8e204f4d90)
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/d8394295-deea-41d2-8d3c-79a334d19cd1)
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/4188d342-d99a-47a2-81f3-18f9108b1be8)
 
-20. Delete Account
+22. Delete Account
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/c1e6ad03-0553-4934-83d9-fbab3c4de41e)
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/4a234d66-dac5-43ae-a918-fcacaf8fc3ca)
 
-21. Logout (user will redirect to login back)
+23. Logout (user will redirect to login back)
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/ce31ab59-8c1a-4c57-a9b2-926c034c9577)
 
-
-<h3>Challenge/difficulties to develop the application</h3>
+## Challenge/difficulties to develop the application
 
 - The most challenges for using github is because of the misunderstandings in branching, merging, and conflict resolution, and this can create frustration and delays in our group project. But if we can undertand the flow of the whole github and our project itself, it makes a lot better in continuing our projects.
 - While understanding branching, merging, and conflict resolution can be complex in GitHub, I believe communication and commitment are even bigger challenges for group projects. Misunderstandings between team members due to unclear expectations or lack of communication can easily lead to missed deadlines but with great communications, this project will pogressing smoothly.
