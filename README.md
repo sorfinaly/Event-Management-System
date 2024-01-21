@@ -131,30 +131,56 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/fee7f4f2-2a14-4e94-83aa-26f9f9772bde)
 
-
-7. Login message error (if user try to login without registering first
+5. Login message error (if user try to login without registering first
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/e585db0e-23ba-45e0-a6a5-553315794e71)
 
-5. Forgot Password Page (if user click forgot pass on login page)
+6. Forgot Password Page (if user click forgot pass on login page)
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/9d4d686f-93ca-4d4b-b452-308b1157e181)
 
-6. Forgot Password Page (when user successfully send email to reset password)
+7. Forgot Password Page (when user successfully send email to reset password)
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/fcc01dc3-98d1-4b2a-8acb-d082707d775e)
 
-8. Email Page (need to open their email to reset password) 
-9. Registration (same validation with login page but with additional data which is name - for user that have @live.iium.edu.my only)
-10. List of Participant
-11. List of Committee
-12. Event Registration Form
-13. Committee Registration Form (Free)
-14. Committee Registration Form (Need payment)
-15. Profile page
-16. Change Password
-17. Change Profile Picture
-18. Delete Account
+8. Forgot Password Page (when user insert invalid email to reset the password)
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/6bc40e9c-2f2a-4e5c-95bf-cc24d7ba3b7f)
+
+9. Email Page (need to open their email to reset password)
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/a3ff649c-0f62-4c4a-9401-a3b4f9b44546)
+
+10. Reset Password Page (when user click link that has been provided in their email)
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/19cfd008-b7e6-4c96-8c1d-63722664b78c)
+
+11. Login Page Back (user will redirect to login page back and shows the success reset password message)
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/63d5520d-805c-4102-b2dd-54e43814cbee)
+
+10. Registration (same validation with login page but with additional data which is name - for user that have @live.iium.edu.my only)
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/b1509270-1546-4d47-838f-b021539cb8bc)
+
+
+11. Registration Page (when user try to register using email other than @live.iium.edu.my or @iium.edu.my)
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/99a4bfdc-8bd0-426c-8856-78a6c853dfce)
+
+12. Login Page (need to login first before entering event management system)
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/ae043eec-b98b-4e87-9ae0-47538c8cdb51)
+
+11. List of Participant
+12. List of Committee
+13. Event Registration Form
+14. Committee Registration Form (Free)
+15. Committee Registration Form (Need payment)
+16. Profile page
+17. Change Password
+18. Change Profile Picture
+19. Delete Account
 
 <h3>Challenge/difficulties to develop the application</h3>
 
