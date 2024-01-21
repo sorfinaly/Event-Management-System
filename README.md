@@ -127,18 +127,34 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 1. Homepage (Main page for user and admin)
 2. Homepage (when scrolled down)
 3. Homepage (when scrolled to the bottom)
-4. Login (for user that have @live.iium.edu.my only)
-5. Forgot Password Page
-6. Registration (same validation with login page but with additional data which is name)
-7. List of Participant
-8. List of Committee
-9. Event Registration Form
-10. Committee Registration Form (Free)
-11. Committee Registration Form (Need payment)
-12. Profile page
-13. Change Password
-14. Change Profile Picture
-15. Delete Account
+4. Login
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/fee7f4f2-2a14-4e94-83aa-26f9f9772bde)
+
+
+7. Login message error (if user try to login without registering first
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/e585db0e-23ba-45e0-a6a5-553315794e71)
+
+5. Forgot Password Page (if user click forgot pass on login page)
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/9d4d686f-93ca-4d4b-b452-308b1157e181)
+
+6. Forgot Password Page (when user successfully send email to reset password)
+
+![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/fcc01dc3-98d1-4b2a-8acb-d082707d775e)
+
+8. Email Page (need to open their email to reset password) 
+9. Registration (same validation with login page but with additional data which is name - for user that have @live.iium.edu.my only)
+10. List of Participant
+11. List of Committee
+12. Event Registration Form
+13. Committee Registration Form (Free)
+14. Committee Registration Form (Need payment)
+15. Profile page
+16. Change Password
+17. Change Profile Picture
+18. Delete Account
 
 <h3>Challenge/difficulties to develop the application</h3>
 
