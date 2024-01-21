@@ -1,7 +1,7 @@
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/ef1bfa1e-c59d-4f13-8a56-7dd8aa402590)
 
-<h2>Title: IIUM Event Management System</h2>
-<h3>Group Members:</h3><br>
+# Title: IIUM Event Management System
+## Group Members:
 
 | NAME                           | MATRIC_NO |
 |:------------------------------:|:---------:|
@@ -12,7 +12,7 @@
 
 Prepared for: DR. MOHD KHAIRUL AZMI BIN HASSAN
 
-<h3>Introduction</h3>
+### Introduction
 
 <p style='text-align: justify;'>
     Welcome to the IIUM Event Management System, your gateway to seamless event coordination within the IIUM environment! The IIUM Event Management System has been developed with a keen understanding that event management plays a critical role in shaping the vibrant culture and community spirit at the International Islamic University Malaysia (IIUM).  Recognizing the importance of efficient event management, this system is meticulously designed for students, students organizations, kulliyyah members, and university staff alike to streamline and simplify the process of planning, organizing, and managing events within the IIUM environment. 
