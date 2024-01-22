@@ -46,16 +46,14 @@ Prepared for: DR. MOHD KHAIRUL AZMI BIN HASSAN
 The objective of the IIUM Event Management System is to streamline and simplify the process of planning, organizing, and managing events within the International Islamic University Malaysia (IIUM) environment. The website aims to serve as a centralized platform, providing comprehensive solutions for efficient event coordination among various stakeholders, including students, student organizations, faculty members, and university staff. 
 
 <br>1. Provide a centralized platform to publish any program-related details.</b>
-<br>2. Ease the event organizers to recruit program committee.</b>
-<br>3. Help to promote the upcoming events to a bigger crowd.</b>
-<br>4. Provide students a platform to easily join more programs for extra co-curricular.</b>
+<br>2. Help to promote the upcoming events to a bigger crowd.</b>
+<br>3. Provide students a platform to easily join more programs for extra co-curricular.</b>
 
 ## Features & Functionality
 <ul>
     <li>Registration form to publish the event</li>
     <li>Registration form to join the event</li>
-    <li>Registration form to recruit committee</li>
-    <li>Each events can see list of attendees and committees</li>
+    <li>Each events can see list of attendees </li>
     <li>User's profile </li>
     <li>search bar and filter keyword</li>
 </ul>
@@ -81,7 +79,7 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/b70b972b-4e44-437c-99fc-5cd824aace50)
 
-4. Landing page
+3. Landing page
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/3ec7e3e7-52d1-4276-80be-13b0d88bc258)
 
@@ -96,27 +94,17 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/1285ef94-86a8-414c-a55b-058c254c52c3)
 
 
-6. Event Details - List of Committee
-
-![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/69bd1498-dd3e-4282-b9df-66dcdd76634c)
-
-
-7. Join as Participant - Free
+6. Join as Participant - Free
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/38b88fbb-7915-482a-9d41-e75651ffa85e)
 
 
-8. Join as Participant - Fee
+7. Join as Participant - Fee
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/3eb6ce8e-3b4a-4c54-83b9-142fc7d11cdd)
 
 
-9. Join as Committee
-
-![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/b8480067-3d31-41cc-97f2-1829a2c3f1e9)
-
-
-10. User Profile
+8. User Profile
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/aa41901a-7c7f-4838-bfb0-bb2f0abf1aae)
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/85787305/bfd28ef6-489c-4008-b5b0-f765eae1f55c)
@@ -176,29 +164,27 @@ In the Entity-Relationship Diagram (ERD) for the IIUM Event Management System, w
 14. List of Participant
 15. List of Committee
 16. Event Registration Form
-17. Committee Registration Form (Free)
-18. Committee Registration Form (Need payment)
-19. Profile page
+17. Profile page
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/2a574ff2-8a52-41e2-86ae-0e2fd8048b03)
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/e4a262ba-c047-4781-9233-15d5880d7082)
 
-20. Update profile (update name, email, phone number and also update profile picture)
+18. Update profile (update name, email, phone number and also update profile picture)
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/6cbabcda-6f77-4bf8-9b9a-589b8f36d6f7)
 
-21. Change Password
+19. Change Password
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/5071c35d-f1a9-424e-a6ff-fc8e204f4d90)
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/d8394295-deea-41d2-8d3c-79a334d19cd1)
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/4188d342-d99a-47a2-81f3-18f9108b1be8)
 
-22. Delete Account
+20. Delete Account
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/c1e6ad03-0553-4934-83d9-fbab3c4de41e)
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/4a234d66-dac5-43ae-a918-fcacaf8fc3ca)
 
-23. Logout (user will redirect to login back)
+21. Logout (user will redirect to login back)
 
 ![image](https://github.com/sorfinaly/IIUM-Event-Management-System/assets/101689696/ce31ab59-8c1a-4c57-a9b2-926c034c9577)
 
